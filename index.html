@@ -22,6 +22,7 @@
 
 </head>
 
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 	<!-- Preloader -->
 <!-- 	<div id="preloader">
@@ -160,13 +161,51 @@
                         SIAM International Conference on Data Mining (SDM) 2018, San Diego, California, USA <br>
                         <a href="https://datalab.snu.ac.kr/uniwalk/resources/uniwalk_sdm.pdf"> [pdf] </a>
                         <a href="https://datalab.snu.ac.kr/uniwalk/"> [website]</a>
-                    <li> 
+                        <a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"> 
+						[Details]
+						</a><div style="DISPLAY: none">
+                        How can we leverage social network data and observed ratings to correctly recommend proper items and provide a persuasive explanation for the recommendations? In this paper, we propose UniWalk, an explainable and accurate recommender system that exploits both social network and rating data. UniWalk combines both data into a unified graph, learns latent features of users and items, and recommends items to each user through the features. Importantly, it explains why items are recommended together with the recommendation results.
+							<div class="row">
+							<div class="col-sm-4 sm-margin-b-50">
+                        		<div class="margin-b-20">
+                            		<img src="./img/uniwalk/explain_main.png" alt="Latest Products Image" width="250">
+                        		</div>
+                        		We recommend items (a, b, and c) to a target user (u1).
+                        	</div>
+                        	<div class="col-sm-4 sm-margin-b-50">
+                        		<div class="margin-b-20">
+                            		<img src="./img/uniwalk/reason1.png" alt="Latest Products Image" width="200">
+                        		</div>
+                        		We recommend the items because the items are preferred by other users (u2, u3, u4, and u5) who are similar to the target user.
+                        	</div>
+                        	<div class="col-sm-4 sm-margin-b-50">
+                        		<div class="margin-b-20">
+                            		<img src="./img/uniwalk/reason2.png" alt="Latest Products Image" width="180">
+                        		</div>
+                        		We recommend the items because the target user likes other similar items (d, e, and i).
+                        	</div>
+                        	</div>
+                        </div>
+                        	
+                    <li>
                         <b>A Comparative Study of Matrix Factorization and Random Walk with Restart in Recommender Systems </b> (to appear) <br>
                         <u>Haekyu Park</u>, Jinhong Jung, and U Kang <br>
                         IEEE International Conference on Big Data (BigData) 2017, Boston, MA, USA <br>
                         <a href="https://datalab.snu.ac.kr/mfrwr/resources/mfrwr.pdf"> [pdf]</a>
                         <a href="https://datalab.snu.ac.kr/mfrwr/"> [website] </a>
 
+                        <a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"> 
+						[Details]
+						</a><div style="DISPLAY: none">
+                        Between matrix factorization (MF) or Random Walk with Restart (RWR), which method works better for recommender systems? 
+                        Which method handles explicit or implicit feedback data better? 
+                        Does additional side information help recommendation?
+                        In this paper, we provide a comparative study of MF and RWR in recommender systems. 
+                        We exactly formulate each correspondence of the two methods according to various tasks in recommendation. 
+                        We observe that matrix factorization performs better with explicit feedback ratings while RWR is better with implicit ones. We also observe that exploiting global popularities of items is advantageous in the performance and that side information produces positive synergy with explicit feedback but gives negative effects with implicit one.
+                        </div>
+
+                        
                 </ul>
                 <br><br>
                	<h3>
