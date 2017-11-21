@@ -1,199 +1,331 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en">
 
-<!-- Head -->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Haekyu Park</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-    <script src="js/vendor/jquery.hashchange.min.js"></script>
-    <script src="js/vendor/jquery.easytabs.min.js"></script>
-    <script src="js/main.js"></script>
+    <meta name="author" content="">
+
+    <title>Haekyu Park</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />	
+	<link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
+
 </head>
-<!-- End Head -->
 
-<!-- Body -->
-<body class="bg-fixed bg-1">
-    <div class="main-container">
-    <div class="main wrapper clearfix">
-    
-    <!-- Main Tab Container -->
-    <div id="tab-container" class="tab-container">
-        <div id="tab-data-wrap">
-        <div id="about">
-            <section class="clearfix">
-                <div class="g2">
-                    <div class="photo">
-                        <img src="images/haekyu.png" alt="Haekyu Park">
-                    </div>
-                    <!-- Main welcome page -->
-                    <div class="info">
-                        <h2>
-                            Haekyu Park
-                        </h2>
-                        <p>
-                        <h6>
-                            Research Intern
-                            <br>
-                            at
-                            <br>
-                            <a href="http://datalab.snu.ac.kr/" target="_blank"> 
-                                Data Mining Lab
-                            </a>
-                            <br>
-                            Computer Science and Engineering
-                            <br>
-                            Seoul National University
-                        </h6>
-                        <br><br>
-                        <font size="4">
-                        Hello! I am a research intern at 
-                        <a href="http://datalab.snu.ac.kr/" target="_blank">Data Mining Lab</a>, advised by Prof. <a href="https://datalab.snu.ac.kr/~ukang/">U Kang</a>.
-                        I received B.S. in department of computer science and engineering at 
-                        <a href="https://www.useoul.edu/">Seoul National University</a>.
-                        <br><br>
-                        I am interested in drawing out a core insight from intertwined and inundated data these days and utilize the data more creatively.
-                        My research currently focuses on machine learning and data mining.
-                        You can see my related research works below.
-                        <!-- You can download my <a href="./assets/pdfs/haekyu_cv.pdf">CV</a>. -->
-                        </p></p>
-                        </font>
-                    </div>
-                    <!-- End main welcome page -->
-                </div>
-                <!-- Upper right side bar -->
-                <div class="g1">
-                    <div class="main-links sidebar">
-                        <ul>
-                            <li>
-                                <b><font size="5">Contact</font></b>
-                                <br>
-                                <a href="mailto:hkpark627@snu.ac.kr"> hkpark627@snu.ac.kr</a>
-                                <br>
-                                Data Mining Laboratory, Building 138 #314, Seoul National University, 1 Gwanak-ro, Gwanak-gu, Seoul, Republic of Korea
-                            <li>
-                                <b><font size="5">CV</font></b> 
-                                <br>
-								My CV is  
-                                <a href="./assets/pdfs/haekyu_cv.pdf">here</a>!
-                            <li>
-                                <b><font size="5">News</font></b> ٩( ᐛ )و
-                                <br>
-                                <ul>
-                                    <li> <span style="background-color:#8eea8e">10/30/2017</span> - I submitted a paper to WWW'18. (under review)
-                                    <li> <span style="background-color:#8eea8e">10/14/2017</span> - I submitted a paper to SDM'18. (under review)
-                                    <li> <span style="background-color:#8eea8e">10/12/2017</span> - My paper is accepted in BigData'17. (to appear)
-                                </ul>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End Upper right side bar -->
-            </section>
-            <!-- End upper page -->
-        </div>
-       <!-- End About Tab Data -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	<!-- Preloader -->
+	<div id="preloader">
+	  <div id="load"></div>
+	</div>
 
-       <!-- Resume Tab Data -->
-        <section id="publications">
-            <section class="clearfix">
-            <div class="g3">
-                <!-- Education -->
-				
-                <h3>
-                    Education
-                </h3>
-                <ul class="no-list work">
-                    <li>
-                        <span class="label label-yellow">Mar. 2012 - Aug.2017</span>
-                        <b>Seoul National University</b><br>
-                        B.S. Computer Science and Engineering
+	<!-- Section: intro -->
+    <section id="intro" class="intro">
+		<div class="slogan">
+			<a href="index.html"><img src="img/logo.png" alt="" /></a>
+		</div>
+		<!-- <div class="page-scroll">
+			<a href="#about">
+				<i class="fa fa-angle-down fa-5x animated"></i>
+			</a>
+			</div>
+		 -->
+    </section>
+	<!-- /Section: intro -->
+	
+    <!-- Navigation -->
+    <div id="navigation">
+        <nav class="navbar navbar-custom" role="navigation">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-md-12">
+                		<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                            <i class="fa fa-bars"></i>
+                            </button>
+                      	</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="menu">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#intro">Home</a></li>
+									<li><a href="#about">About Me</a></li>
+									<li><a href="#research">My Research</a></li>
+									<li><a href="#misc">Miscellaneous</a></li>
+									<li><a href="#gallery">My gallery</a></li>  
+									<li><a href="#contact">Talk to me</a></li>
+	                            </ul>
+	                      </div>
+	                      <!-- /.Navbar-collapse -->
+                             
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- /.container -->
+                        </nav>
+    </div> 
+    <!-- /Navigation -->  
+
+	<!-- Section: about -->
+    <section id="about" class="home-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="section-heading text-center">
+					<div class="wow bounceInDown" data-wow-delay="0.2s">
+						<h2>My name is Haekyu (๑˃̵ᴗ˂̵)و</h2>
+					</div>
+					<p class="wow bounceInUp" data-wow-delay="0.3s">
+						Research Intern at
+                        <a href="http://datalab.snu.ac.kr/" target="_blank"> Data Mining Lab </a>
+                        <br> Computer Science and Engineering, 
+                        Seoul National University
                         <br>
-                </ul>
-                <!-- Publications -->
-                <h3>
-                    Publications
-                </h3>
+                        Mail to me: <a href="mailto:hkpark627@snu.ac.kr"> hkpark627@snu.ac.kr</a>
+                        <br>
+					</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+				<img src="img/img1.jpg" class="img-responsive img-rounded" alt="" />
+				</div>		
+				<div class="col-md-6">
+					<strong> About Me </strong><br>
+					Hello! I am a research intern at 
+                    <a href="http://datalab.snu.ac.kr/" target="_blank">Data Mining Lab</a>, advised by Prof. <a href="https://datalab.snu.ac.kr/~ukang/">U Kang</a>.
+                    I received B.S. in department of computer science and engineering at 
+                    <a href="https://www.useoul.edu/">Seoul National University</a>.
+                    <br><br>
+                    I am interested in drawing out a core insight from intertwined and inundated data these days and utilize the data more creatively.
+                    My research currently focuses on machine learning and data mining.
+                    You can see my related research works below.
+					<br><br>
+					You can download my curriculum vitae <a href="./assets/pdfs/haekyu_cv.pdf">here</a>!
+					<br><br>
+					<strong> What's New </strong>
+					<ul>
+						<li> <font color="#F25A8A">Dec 10-15, 2017</font> - I go to Boston for my paper representation.
+                        <li> <font color="#F25A8A">Oct 30, 2017</font> - I submitted a paper to WWW'18. (under review)
+                        <li><font color="#F25A8A">Oct 14, 2017</font> - I submitted a paper to SDM'18. (under review)
+                        <li> <font color="#F25A8A">Oct 12, 2017</font> - My paper is accepted in BigData'17. (to appear)
+                    </ul>
+				</div>
+			</div>		
+		</div>
+	</section>
+	<!-- /Section: about -->
+
+	<!-- Section: research -->
+    <section id="research" class="home-section">
+    	<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="section-heading text-center">
+					<div class="wow bounceInDown" data-wow-delay="0.2s">
+						<h2>My research</h2>
+					</div>
+					<p class="wow bounceInUp" data-wow-delay="0.3s">
+						Success is liking yourself, liking what you do, and liking how you do it. - Maya Angelou
+					</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h3>Publications</h3>
                 <ul class="no-list work">
                     <li>
-                    <li>
-                        <span class="label label-blue">WWW'18</span> 
                         <b>SIDE: Representation Learning in Signed Directed Networks </b> (under review) <br>
                         Junghwan Kim, <u>Haekyu Park</u>, Ji-eun Lee, and U Kang <br>
                         The Web Conference (Previously known as WWW, World Wide Web Conference) 2018, Lyon, France <br>
                     <li>
-                        <span class="label label-blue">SDM'18</span> 
                         <b>UniWalk: Explainable and Accurate Recommendation for Rating and Network Data</b> (under review) <br>
                         <u>Haekyu Park</u>, Hyunsik Jeon, Junghwan Kim, Beunguk Ahn, and U Kang <br>
                         SIAM International Conference on Data Mining (SDM) 2018, San Diego, California, USA <br>
                         <a href="https://datalab.snu.ac.kr/uniwalk/resources/uniwalk_sdm.pdf"> [pdf] </a>
                         <a href="https://datalab.snu.ac.kr/uniwalk/"> [website]</a>
                     <li> 
-                        <span class="label label-blue">BigData'17</span> 
                         <b>A Comparative Study of Matrix Factorization and Random Walk with Restart in Recommender Systems </b> (to appear) <br>
                         <u>Haekyu Park</u>, Jinhong Jung, and U Kang <br>
                         IEEE International Conference on Big Data (BigData) 2017, Boston, MA, USA <br>
                         <a href="https://datalab.snu.ac.kr/mfrwr/resources/mfrwr.pdf"> [pdf]</a>
                         <a href="https://datalab.snu.ac.kr/mfrwr/"> [website] </a>
+
                 </ul>
-                
-                <!-- Projects -->
-                <h3>
+                <br><br>
+               	<h3>
                     Projects
                 </h3>
                 <ul class="no-list work">
                     <li>
-                    <li>
-                        <span class="label label-green">Aug.-Present, 2017</span> 
-                        <b>Recommender system on videos of Oksusu application</b> (with SKT) <br>
+                        <b>Recommender system on videos of Oksusu application</b> (with SKT, Aug-Present, 2017) <br>
                         We recommend videos to users in Oksusu application. Our model uses deep learning to achieve quality recommendation. Our recommendation engine handles massive data on users' behaviors and heterogeneous information on videos.
                     <li> 
-                        <span class="label label-green">June-Dec., 2016</span>
-                        <b>Personalized recommendation on credit card benefits</b> (with Hyundai card)<br>
+                        <span class="label label-green"></span>
+                        <b>Personalized recommendation on credit card benefits</b> (with Hyundai card, June-Dec, 2016)<br>
                         We provide personalized recommendations on credit card benefits to customers. 
                         The main algorithm is TCMF (Time Coupled Matrix Factorization). We use various side information of users and items and highly improve the recommendation performance.<br>
                         <a href="http://news.mk.co.kr/newsRead.php?year=2016&no=852499" > [News article] </a>
                 </ul>
-
-
-                
-                <!-- Awards and Honors -->
-                <h3>
-                    Awards and Honors
-                </h3>
+		</div>
+	</section>
+	<!-- /Section: research -->
+	
+	
+	<!-- Section: misc -->
+    <section id="misc" class="home-section">
+    	<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="section-heading text-center">
+					<div class="wow bounceInDown" data-wow-delay="0.2s">
+						<h2>Miscellaneous things</h2>
+					</div>
+					<p class="wow bounceInUp" data-wow-delay="0.3s">
+						More about me!
+					</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h3>Education</h3>
                 <ul class="no-list work">
                     <li>
-                        <span class="label label-red">2015</span>
-                        <b>National Scholarship for Science and Engineering</b>
+                        <b>Seoul National University</b><br>
+                        B.S. Computer Science and Engineering, Mar. 2012 - Aug.2017
                         <br>
-                        Merit-based
                 </ul>
-            </div>
-        </section>
-        <!-- End Resume Tab Data -->
-	Last updated: November 17, 2017 
-	<font color="white"> 
-	(๑˃̵ᴗ˂̵)و
-	₍₍ ( ๑॔˃̶◡˂̶๑॓)◞
-	٩(๑`^´๑)۶
-	٩( ᐛ )و
-	</font>
-    </div>
+            <br><br>
+			<h3>Awards and Honors</h3>
+                <ul class="no-list work">
+                    <li> 
+                    	<strong>National Scholarship for Science and Engineering</strong><br>
+                    	Merit-based, 2015
+                </ul>
+               	
+		</div>
+	</section>
+	<!-- /Section: misc -->
 
-    <!-- End Tab Container -->
-    <!-- <footer>
-      <p>
-        Designed with lots of love at <a href="http://www.mrova.com" title="Pune web designing company">mRova</a>. Just <a href="http://www.mrova.com/free-one-page-responsive-html-resume-template/">Click me to download</a> this template for free :).
-      </p>
-    </footer>
- -->
-  </div> <!-- #main -->
-</div> <!-- #main-container -->
-<a href="https://clustrmaps.com/site/19ukp" title="Visit tracker"><img width="0" height="0" src="//www.clustrmaps.com/map_v2.png?d=KRIAaOtR6zPHT_-nh4hD0ci5_wj5m_LW9t35OaZ4sis&cl=ffffff"></a>
+	<!-- Section: gallery -->
+    <section id="gallery" class="home-section text-center bg-gray">
+
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading">
+						<h2>My photo gallery</h2>
+						<p>Take a look at my personal moment, enjoy</p>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+		<div class="container">
+			<div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12" >
+					<div class="wow bounceInUp" data-wow-delay="0.4s">
+                    <div id="owl-works" class="owl-carousel">
+                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/1.jpg" class="img-responsive" alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/2.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/2.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/3.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/4.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/5.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/5.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/6.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/6.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/7.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/7.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/8.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/9.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/10.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/11.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/12.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/13.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/14.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/15.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/16.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/17.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/18.jpg" class="img-responsive " alt="img"></a></div>
+                    </div>
+					</div>
+                </div>
+            </div>
+		</div>
+	</section>
+	<!-- /Section: services -->
+	
+
+	
+
+	<!-- Section: contact -->
+    <section id="contact" class="home-section text-center">
+		<div class="heading-contact">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-offset-2">
+					<div class="section-heading">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<h2>Contact</h2>
+					</div>
+					<p class="wow lightSpeedIn" data-wow-delay="0.3s"><a href="mailto:hkpark627@snu.ac.kr"> hkpark627@snu.ac.kr</a>
+	                <br>
+	                Data Mining Laboratory, Building 138 #314, Seoul National University, 1 Gwanak-ro, Gwanak-gu, Seoul, Republic of Korea
+					</div>
+					
+				</div>
+			</div>
+			</div>
+		</div>
+    </div>	
+
+		</div>
+	</section>
+	<!-- /Section: contact -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<!-- <div class="col-md-12 col-lg-12">
+					<p>&copy;Copyright 2014 . Alice Lonely . design by <a href="http://bootstraptaste.co">Bootstrap Themes</a></p>
+				</div> -->
+                <!-- 
+                    All links in the footer should remain intact. 
+                    Licenseing information is available at: http://bootstraptaste.com/license/
+                    You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Lonely
+                -->
+			</div>	
+		</div>
+	</footer>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>	
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+
 </body>
 
 </html>
