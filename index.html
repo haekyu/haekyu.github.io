@@ -132,11 +132,13 @@
 		</div>
 		<div class="container">
 			<h3>Publications</h3>
+				<h4> 2018 </h4>
                 <ul class="no-list work">
                     <li>
                         <b>SIDE: Representation Learning in Signed Directed Networks </b> (under review) <br>
                         Junghwan Kim, <u>Haekyu Park</u>, Ji-eun Lee, and U Kang <br>
                         The Web Conference (Previously known as WWW, World Wide Web Conference) 2018, Lyon, France <br>
+                    </li>
                     <li>
                         <b>UniWalk: Explainable and Accurate Recommendation for Rating and Network Data</b> (under review) <br>
                         <u>Haekyu Park</u>, Hyunsik Jeon, Junghwan Kim, Beunguk Ahn, and U Kang <br>
@@ -146,63 +148,120 @@
                         <a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"> 
 						[Details]
 						</a><div style="DISPLAY: none">
-                        How can we leverage social network data and observed ratings to correctly recommend proper items and provide a persuasive explanation for the recommendations? In this paper, we propose UniWalk, an explainable and accurate recommender system that exploits both social network and rating data. UniWalk combines both data into a unified graph, learns latent features of users and items, and recommends items to each user through the features. Importantly, it explains why items are recommended together with the recommendation results.
-							<div class="row">
-							<div class="col-sm-4 sm-margin-b-50">
-                        		<div class="margin-b-20" style="text-align: center;">
-                            		<img src="./img/uniwalk/explain_main.png" alt="Latest Products Image" width="250">
-                        		</div>
-                        		We recommend items (a, b, and c) to a target user (u1).
-                        	</div>
-                        	<div class="col-sm-4 sm-margin-b-50">
-                        		<div class="margin-b-20" style="text-align: center;">
-                            		<img src="./img/uniwalk/reason1.png" alt="Latest Products Image" width="200">
-                        		</div>
-                        		We recommend the items because the items are preferred by other users (u2, u3, u4, and u5) who are similar to the target user.
-                        	</div>
-                        	<div class="col-sm-4 sm-margin-b-50">
-                        		<div class="margin-b-20" style="text-align: center;">
-                            		<img src="./img/uniwalk/reason2.png" alt="Latest Products Image" width="180">
-                        		</div>
-                        		We recommend the items because the target user likes other similar items (d, e, and i).
-                        	</div>
-                        	</div>
+							<ul class="no-list work">
+								<li> <b>Main Question</b>:<br> 
+                        			How can we leverage social network data and observed ratings to correctly recommend proper items and provide a persuasive explanation for the recommendations? 
+                        		</li>
+                        		<li> <b>Proposed Model</b>:</br>
+                        			We propose UniWalk, an explainable and accurate recommender system that exploits both social network and rating data. UniWalk combines both data into a unified graph, learns latent features of users and items, and recommends items to each user through the features. Importantly, it explains why items are recommended together with the recommendation results.
+									<div class="row">
+										<div class="col-sm-4 sm-margin-b-50">
+			                        		<div class="margin-b-20" style="text-align: center;">
+			                            		<img src="./img/uniwalk/explain_main.png" alt="Latest Products Image" width="250">
+			                        		</div>
+			                        		We recommend items (a, b, and c) to a target user (u1).
+			                        	</div>
+			                        	<div class="col-sm-4 sm-margin-b-50">
+			                        		<div class="margin-b-20" style="text-align: center;">
+			                            		<img src="./img/uniwalk/reason1.png" alt="Latest Products Image" width="200">
+			                        		</div>
+			                        		We recommend the items because the items are preferred by other users (u2, u3, u4, and u5) who are similar to the target user.
+			                        	</div>
+			                        	<div class="col-sm-4 sm-margin-b-50">
+			                        		<div class="margin-b-20" style="text-align: center;">
+			                            		<img src="./img/uniwalk/reason2.png" alt="Latest Products Image" width="180">
+			                        		</div>
+			                        		We recommend the items because the target user likes other similar items (d, e, and i).
+			                        	</div>
+			                        </div>
+			                    </li>
+			                </ul>
                         </div>
-                        	
+                    </li>
+                </ul>
+                <br>
+                <h4> 2017 </h4>
+                <ul class="no-list work">
                     <li>
                         <b>A Comparative Study of Matrix Factorization and Random Walk with Restart in Recommender Systems </b> (to appear) <br>
                         <u>Haekyu Park</u>, Jinhong Jung, and U Kang <br>
                         IEEE International Conference on Big Data (BigData) 2017, Boston, MA, USA <br>
                         <a href="https://datalab.snu.ac.kr/mfrwr/resources/mfrwr.pdf"> [pdf]</a>
                         <a href="https://datalab.snu.ac.kr/mfrwr/"> [website] </a>
-
                         <a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"> 
 						[Details]
 						</a><div style="DISPLAY: none">
-                        Between matrix factorization (MF) or Random Walk with Restart (RWR), which method works better for recommender systems? 
-                        Which method handles explicit or implicit feedback data better? 
-                        Does additional side information help recommendation?
-                        In this paper, we provide a comparative study of MF and RWR in recommender systems. 
-                        We exactly formulate each correspondence of the two methods according to various tasks in recommendation. 
-                        We observe that matrix factorization performs better with explicit feedback ratings while RWR is better with implicit ones. We also observe that exploiting global popularities of items is advantageous in the performance and that side information produces positive synergy with explicit feedback but gives negative effects with implicit one.
+							<ul class="no-list work">
+								<li> <b>Main Question</b>:<br> 
+									Between matrix factorization (<b>MF</b>) or Random Walk with Restart (<b>RWR</b>), 
+									which method works better for recommender systems?
+								<li> <b>Specific tasks</b>:<br>
+                        			We compare MF and RWR for the following recommendation scenarios.
+                        			<ul class="no-list work">
+                        				<li> Which method performs better when using <b>explicit feedback</b> data?</li>
+                        				&rarr; MF is better.
+                        				<li> Which method performs better when using <b>implicit feedback</b> data?</li>
+                        				&rarr; RWR is better.
+                        				<li> Do global <b>bias</b> terms improve performance?</li>
+                        				&rarr; Yes.
+                        				<li> Which method performs better when exploiting global <b>bias</b> terms?</li>
+                        				&rarr; MF is better.
+                        				<li> Does <b>side information</b> enhance performance?</li>
+                        				&rarr; Yes with explicit ratings, and No with implicit ratings.
+                        				<li> Which method performs better when employing <b>side information</b>? </li>
+                        				&rarr; MF is better with explicit rating data, and RWR is better with implicit rating data.
+                        				<li> Which method solves the <b>cold start problem</b> better when employing <b>side data</b>? </li>
+                        				&rarr; MF is better with explicit rating data, and RWR is better with implicit rating data.
+                        			</ul>
+                        		<li> <b>Discussion</b>:<br>
+                        			What are the <b>reasons</b> for good or bad performance of MF and RWR in various settings of recommendations?
+                        			Details are in Section 4.G in our paper. Please read that part!
                         </div>
+                    </li>
 
                         
                 </ul>
                 <br><br>
-               	<h3>
-                    Projects
-                </h3>
+               	<h3> Projects </h3>
+               	<h4> 2017 </h4>
                 <ul class="no-list work">
                     <li>
-                        <b>Recommender system on videos of Oksusu application</b> (with SKT, Aug-Present, 2017) <br>
-                        We recommend videos to users in Oksusu application. Our model uses deep learning to achieve quality recommendation. Our recommendation engine handles massive data on users' behaviors and heterogeneous information on videos.
-                    <li> 
-                        <span class="label label-green"></span>
-                        <b>Personalized recommendation on credit card benefits</b> (with Hyundai card, June-Dec, 2016)<br>
-                        We provide personalized recommendations on credit card benefits to customers. 
-                        The main algorithm is TCMF (Time Coupled Matrix Factorization). We use various side information of users and items and highly improve the recommendation performance.<br>
-                        <a href="http://news.mk.co.kr/newsRead.php?year=2016&no=852499" > [News article] </a>
+                        <b>Recommender system on videos of Oksusu application</b>
+                        <ul class="no-list work">
+                        	<li> Aug-Present, 2017, with SKT
+                        	<li> We recommend videos to users in Oksusu application. 
+                        		Our model uses deep learning to achieve quality recommendation. 
+                        		Our recommendation engine handles massive data on users' behaviors and heterogeneous information on videos.
+                        </ul>
+                	</li>
+                	<li>
+                    	<b>A Fast and Cost Efficient Data Compression Algorithm with Shared Virtual Memory in Heterogeneous System Architecture</b>
+                    	<ul class="no-list work">
+                        	<li> Nov 2016 - Aug 2017, for my undergraduate graduation essay
+                        	<li> I used GPGPU and Shared Virtual Memory (SVM) in Heterogeneous System Architecture (HSA).
+                        	<li> I acquired parallel programming thinking and skills, especially with C++ and OpenCL.
+                       	</ul>
+                   	</li>
+                </ul>
+                <h4> 2016 </h4>
+                <ul class="no-list work">
+                    <li>
+                        <b>Personalized recommendation on credit card benefits</b><br>
+                        <ul class="no-list work">
+                        	<li>June-Dec, 2016, with Hyundai card
+                        	<li> We provide personalized recommendations on credit card benefits to customers. 
+                        		The main algorithm is TCMF (Time Coupled Matrix Factorization). 
+                        		We use various side information of users and items and highly improve the recommendation performance.
+                        	<li><a href="http://news.mk.co.kr/newsRead.php?year=2016&no=852499" > [News article] </a>
+                       	</ul>
+                    </li>
+                    <li>
+                    	<b>Social Recommender system with graph and rating information</b><br>
+                    	<ul class="no-list work">
+                    		<li> Sep-Dec, 2016, for final project of Probabilistic Graphical Model course
+                    		<li> We designed and implemented a novel recommendation model leveraging social network by network embedding.
+                    	</ul>
+                    </li>
                 </ul>
 		</div>
 	</section>
@@ -229,7 +288,7 @@
                         B.S. Computer Science and Engineering, Mar. 2012 - Aug.2017
                         <br>
                 </ul>
-            <br><br>
+            <br>
 			<h3>Research Experience</h3>
                 <ul class="no-list work">
                     <li> 
@@ -238,8 +297,9 @@
 						<ul class="no-list work">
                     		<li> June 2016 - Present
 							<li> Advisor: Professor <a href="http://datalab.snu.ac.kr/~ukang"> U Kang </a>
+						</ul>
                 </ul>
-			<br><br>
+			<br>
 			<h3>Awards and Honors</h3>
                 <ul class="no-list work">
                     <li> 
@@ -283,7 +343,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-lg-12">
-					<p>Last updated: Nov 21, 2017</p>
+					<p>Last updated: Nov 24, 2017</p>
 				</div>
 				<!-- 
 				<div class="col-md-12 col-lg-12">
