@@ -31,8 +31,9 @@ font-family: 'Nanum Pen Script', serif;
 @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 
 body{
-    font-family: 'Miriam Libre', sans-serif;
+    font-family: 'Handlee', cursive;
     padding-top:54px;
+    font-size:1.3rem;
     color:#868e96
 }
 
@@ -44,9 +45,8 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Patrick Hand SC', cursive;
+    font-family: 'Handlee', cursive;
     font-weight:700;
-    /*text-transform:uppercase;*/
     color:#343a40
 }
 
@@ -60,7 +60,7 @@ h2{
 }
 
 h3{
-    font-family:'Patrick Hand', cursive;
+    font-family: 'Handlee', cursive;
 }
 
 .korean{
@@ -68,10 +68,9 @@ h3{
 }
 
 .subheading{
-    /*text-transform:uppercase;*/
     font-weight:500;
-    font-family:'Patrick Hand', cursive;
-    font-size:1.35rem
+    font-family: 'Handlee', cursive;
+    font-size:1.4rem
 }
 
 .list-social-icons a{color:#495057}
@@ -82,7 +81,7 @@ h3{
 
 #sideNav .navbar-nav .nav-item .nav-link{
     font-weight:600;
-    text-transform:uppercase
+    /*text-transform:uppercase*/
 }
 
 @media (min-width:992px){
