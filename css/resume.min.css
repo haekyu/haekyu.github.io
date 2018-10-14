@@ -27,11 +27,34 @@ font-family: 'Patrick Hand SC', cursive;
 font-family: 'Patrick Hand', cursive;
 font-family:'Saira Extra Condensed',serif;
 font-family: 'Nanum Pen Script', serif;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Nanum Brush Script', cursive;
+font-family: 'East Sea Dokdo', cursive;
+font-family: 'Gaegu', cursive;
+font-family: 'Gamja Flower', cursive;
+font-family: 'Yeon Sung', cursive;
+font-family: 'Cute Font', cursive;
+font-family: 'Do Hyeon', sans-serif;
+font-family: 'Noto Serif KR', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'Charmonman', cursive;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Ranga', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Kalam', cursive;
 */
 @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 
 body{
-    font-family: 'Handlee', cursive;
+    font-family: 'Kalam', cursive;
     padding-top:54px;
     font-size:1.3rem;
     color:#868e96
@@ -45,7 +68,7 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Handlee', cursive;
+    font-family: 'Kalam', cursive;
     font-weight:700;
     color:#343a40
 }
@@ -60,16 +83,16 @@ h2{
 }
 
 h3{
-    font-family: 'Handlee', cursive;
+    font-family: 'Kalam', cursive;
 }
 
 .korean{
-    font-family: 'Nanum Pen Script', serif;
+    font-family: 'Yeon Sung', cursive;
 }
 
 .subheading{
     font-weight:500;
-    font-family: 'Handlee', cursive;
+    font-family: 'Kalam', cursive;
     font-size:1.4rem
 }
 
