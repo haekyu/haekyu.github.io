@@ -295,25 +295,26 @@
                 <!-- Conference on Visual Analytics Science and Technology -->
                 (<a href="http://ieeevis.org/year/2019/welcome">VAST</a>), 2019,
                 Vancouver, BC, Canada <br>
-                <!-- <a href="assets/papers/19-pacificvis-neural-divergence.pdf">[PDF]</a> -->
-                <!-- <a href="http://haekyu.com/neural-divergence/">[Website]</a> -->
+                <a href="https://fredhohman.com/papers/summit">[Website]</a>
+                <a href="https://fredhohman.com/summit/">[Demo]</a>
+                <a href="https://fredhohman.com/papers/19-summit-vast.pdf">[PDF]</a>
                 <a href="https://arxiv.org/abs/1904.02323">[arXiv]</a>
-                <!-- <a href=#none onclick=toggle_block('bibtex-neuraldivergence');>[BibTeX]</a>
-                <a href=#none onclick=toggle_block('detail-neuraldivergence');>[Details]</a>
-                <pre id='bibtex-neuraldivergence' style="display: none; transform: translate(-155px, 15px); font-size: 15px">
-                  @inproceedings{park2019neuraldivergence,
-                    title={NeuralDivergence: Exploring and Understanding Neural Networks by Comparing Activation Distributions},
-                    author={Park, Haekyu and Hohman, Fred and Chau, Duen Horng},
-                    booktitle={Poster, Pacific Visualization Symposium (PacificVis)},
-                    year={2019},
-                    publisher={IEEE},
-                    url={http://haekyu.com/neural-divergence/}
+                <a href=#none onclick=toggle_block('bibtex-summit');>[BibTeX]</a>
+                <a href=#none onclick=toggle_block('detail-summit');>[Details]</a>
+                <pre id='bibtex-summit' style="display: none; transform: translate(-155px, 15px); font-size: 15px">
+                  @article{hohman2020summit,
+                    title={Summit: Scaling Deep Learning Interpretability by Visualizing Activation and Attribution Summarizations},
+                    author={Hohman, Fred and Park, Haekyu and Robinson, Caleb and Chau, Duen Horng},
+                    journal={IEEE Transactions on Visualization and Computer Graphics (TVCG)},
+                    year={2020},
+                    publisher={IEEE}
+                    url={https://fredhohman.com/summit/}
                   }
                 </pre>
-                <div id='detail-neuraldivergence' style="text-align:justify; display:none;">
+                <div id='detail-summit' style="text-align:justify; display:none;">
                   <br>
-                  As deep neural networks are increasingly used in solving high-stake problems, there is a pressing need to understand their internal decision mechanisms. Visualization has helped address this problem by assisting with interpreting complex deep neural networks. However, current tools often support only single data instances, or visualize layers in isolation. We present NeuralDivergence, an interactive visualization system that uses activation distributions as a high-level summary of what a model has learned. NeuralDivergence enables users to interactively summarize and compare activation distributions across layers, classes, and instances (e.g., pairs of adversarial attacked and benign images), helping them gain better understanding of neural network models.
-                </div> -->
+                  With Summit, users can scalably summarize and interactively interpret deep neural networks by visualizing what features a network detects and how they are related. In this example, InceptionV1 accurately classifies images of tench (yellow-brown fish). However, Summit reveals surprising associations in the network (e.g., using parts of people) that contribute to its final outcome: the "tench" prediction is dependent on an intermediate "hands holding fish" feature (right callout), which is influenced by lower-level features like "scales," "person," and "fish". A. The Embedding View summarizes all classes' aggregated activations using dimensionality reduction. B. The Class Sidebar enables users to search, sort, and compare all classes within a model. C. The Attribution Graph View visualizes highly activated neurons as vertices ("scales" "fish") and their most influential connections as edges (dashed purple edges).
+                </div>
               </div>
             </div>
           </div>
