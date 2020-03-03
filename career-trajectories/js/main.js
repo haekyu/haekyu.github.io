@@ -1,4 +1,4 @@
-var file_list = ['../data/vis_sample.csv']
+var file_list = ['./data/vis_sample.csv']
 var profile_attributes = ['Education', 'NumSkills']
 var transition_attributes = ['WorkExperience', 'StartDates', 'EndDates']
 
