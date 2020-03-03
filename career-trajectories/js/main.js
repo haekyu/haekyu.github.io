@@ -1,4 +1,4 @@
-var file_list = ['./data/vis_sample.csv']
+var file_list = ['../data/vis_sample.csv']
 var profile_attributes = ['Education', 'NumSkills']
 var transition_attributes = ['WorkExperience', 'StartDates', 'EndDates']
 
@@ -22,6 +22,7 @@ var trajectory_data = []
 var node_data = []
 var transition_data = []
 var node_transition_data = []
+var node_passing_data = {}
 var num_max_transitions = 0
 var position_dict = {}
 var transition_dict = {}
@@ -31,13 +32,14 @@ var y_scale_sankey = []
 var education_color_dict = {}
 var position_color_dict = {}
 var node_height_scale = {}
+var edge_start_y = {}
+var edge_end_y = {}
 
 Promise.all(file_list.map(file => d3.dsv(',', file))).then(function(data) { 
   // Parse the dataset
   trajectory_data = parse_trajectory_data(data[0])
   position_dict = get_position_dict()
-  transition_data = get_transition_data()
-  window.trajectory_data = trajectory_data
+  node_passing_data = get_node_passing_data()
   
   // Vis setting
   main_vis_setting()
@@ -56,7 +58,16 @@ Promise.all(file_list.map(file => d3.dsv(',', file))).then(function(data) {
   transition_dict = get_transition_dict()
   transition_data = get_transition_data()
   node_transition_data = get_node_transition_data()
+  edge_start_y = get_edge_start_y()
+  edge_end_y = get_edge_end_y()
   draw_edges()
+
+  window.trajectory_data = trajectory_data
+  window.position_dict = position_dict
+  window.transition_data = transition_data
+  window.transition_dict = transition_dict
+  window.node_transition_data = node_transition_data
+  window.node_passing_data = node_passing_data
 
 })
 
@@ -129,6 +140,51 @@ function get_position_dict() {
   })
 
   return position_dict
+}
+
+function get_node_passing_data() {
+  var node_passing_data = {}
+  for (var jobNumber = 0; jobNumber < num_max_transitions; jobNumber++) {
+    positions.forEach(position => {
+      var node_id = ['node', jobNumber, position].join('-')
+      if (!(node_id in node_passing_data)) {
+        node_passing_data[node_id] = {}
+      }
+      var data_passing_node = filter_data_passing_one_node(jobNumber, position)
+      aggregate_transition(data_passing_node, node_id)
+      node_passing_data[node_id] = Object.entries(node_passing_data[node_id]).map(function(x) {
+        return {'edge': x[0], 'num': x[1]}
+      })
+    })
+  }
+  return node_passing_data
+
+  function filter_data_passing_one_node(jobNumber, position) {
+    var filtered_data = trajectory_data.filter(function(d) {
+      if (d['WorkExperience'].length > jobNumber) {
+        if (d['WorkExperience'][jobNumber] == position) {
+          return true
+        }
+      }
+      return false
+    })
+
+    return filtered_data
+  }
+
+  function aggregate_transition(data_passing_node, node_id) {
+    data_passing_node.forEach(d => {
+      for (var i = 0; i < d['WorkExperience'].length - 1; i++) {
+        var from = d['WorkExperience'][i]
+        var to = d['WorkExperience'][i + 1]
+        var transition_id = [i, from, to].join('-')
+        if (!(transition_id in node_passing_data[node_id])) {
+          node_passing_data[node_id][transition_id] = 0
+        }
+        node_passing_data[node_id][transition_id] += 1
+      }
+    })
+  }
 }
 
 function get_transition_data() {
@@ -328,7 +384,7 @@ function draw_nodes() {
     .attr('x', function(d) { return x_scale_sankey[d['jobNumber']] })
     .attr('y', function(d) { return y_scale_sankey[d['jobNumber']][d['position']] })
     .style('fill', function(d) { return position_color_dict[d['position']] })
-    .on('mouseover', function(d) { return node_mouseover(d) })
+    .on('mouseover', function(d) { return node_mouseover_all_history_passing_the_node(d) })
     .on('mouseout', function(d) { return node_mouseout(d) })
 
   function get_node_id(d) {
@@ -341,7 +397,7 @@ function draw_nodes() {
     return [c1, c2].join(' ')
   }
 
-  function node_mouseover(d) {
+  function node_mouseover_right_before_after(d) {
     var node_id = get_node_id(d)
     d3.select('#' + node_id)
       .style('cursor', 'pointer')
@@ -356,7 +412,43 @@ function draw_nodes() {
       .style('opacity', 0.3)
   }
 
+  function node_mouseover_all_history_passing_the_node(d) {
+    var node_id = get_node_id(d)
+    d3.select('#' + node_id)
+      .style('cursor', 'pointer')
+    d3.selectAll('.edge')
+      .style('stroke', 'lightgray')
+      .style('opacity', 0.1)
+
+    // console.log(node_passing_data[node_id])
+    d3.select('#g-sankey-edge')
+      .selectAll('sankey-edge')
+      .data(node_passing_data[node_id])
+      .enter()
+      .append('path')
+      .attr('class', 'all-history-edges')
+      .attr('d', function (dd) {
+        var jobNumber = parseInt(dd['edge'].split('-')[0])
+        var from = dd['edge'].split('-')[1]
+        var to = dd['edge'].split('-')[2]
+        return gen_path(jobNumber, from, to)
+      })
+      .style('fill', 'none')
+      .style('stroke', function(dd) { 
+        var to = dd['edge'].split('-')[2]
+        return position_color_dict[to] 
+      })
+      .style('stroke-width', function(dd) { 
+        var num = dd['num']
+        return node_height_scale(num) 
+      })
+      .style('opacity', 0.3)
+    
+  }
+
   function node_mouseout(d) {
+    d3.selectAll('.all-history-edges')
+      .remove()
     d3.selectAll('.edge')
       .style('stroke', function(dd) { return node_mouseout_edge_stroke(dd) })
       .style('opacity', function (dd) { return node_mouseout_opacity(dd) })
@@ -596,8 +688,6 @@ function get_edge_end_y() {
 }
 
 function draw_edges() {
-  var edge_start_y = get_edge_start_y()
-  var edge_end_y = get_edge_end_y()
 
   d3.select('#g-sankey-edge')
     .selectAll('sankey-edge')
@@ -606,7 +696,7 @@ function draw_edges() {
     .append('path')
     .attr('id', function(d) { return gen_edge_id(d) })
     .attr('class', function(d) { return gen_class(d)})
-    .attr('d', function(d) { return gen_path(d) })  
+    .attr('d', function(d) { return gen_path(d['jobNumber'], d['from'], d['to']) })  
     .style('stroke', function(d) { return position_color_dict[d['to']] })
     .style('fill', 'none')
     .style('stroke-width', function(d) { return node_height_scale(d['num']) })
@@ -625,24 +715,24 @@ function draw_edges() {
     return [c0, c1, c2, c3, c4].join(' ')
   }
 
-  function gen_path(d) {
-
-    var start_x = x_scale_sankey[d['jobNumber']] + node_setting['width'] - 3
-    var start_y = edge_start_y[d['jobNumber']][d['from']][d['to']]
-    var end_x = x_scale_sankey[d['jobNumber'] + 1] + 3
-    var end_y = edge_end_y[d['jobNumber']][d['from']][d['to']]
-    var x1 = internal_division(start_x, end_x, 30, 1)
-    var y1 = internal_division(start_y, end_y, 1, 9)
-    var x2 = internal_division(start_x, end_x, 1, 9)
-    var y2 = internal_division(start_y, end_y, 9, 1)
-    var moveto = 'M ' + [start_x, start_y].join(',')
-    var curveto = 'C ' + [x1, y1, x2, y2, end_x, end_y].join(',')
-
-    return [moveto, curveto].join(' ')
-  }
-
-  function internal_division(a, b, m, n) {
-    return (n * a + m * b) / (m + n)
-  }
 }
 
+function gen_path(jobNumber, from, to) {
+
+  var start_x = x_scale_sankey[jobNumber] + node_setting['width'] - 3
+  var start_y = edge_start_y[jobNumber][from][to]
+  var end_x = x_scale_sankey[jobNumber + 1] + 3
+  var end_y = edge_end_y[jobNumber][from][to]
+  var x1 = internal_division(start_x, end_x, 5, 1)
+  var y1 = internal_division(start_y, end_y, 1, 9)
+  var x2 = internal_division(start_x, end_x, 1, 9)
+  var y2 = internal_division(start_y, end_y, 9, 1)
+  var moveto = 'M ' + [start_x, start_y].join(',')
+  var curveto = 'C ' + [x1, y1, x2, y2, end_x, end_y].join(',')
+
+  return [moveto, curveto].join(' ')
+}
+
+function internal_division(a, b, m, n) {
+  return (n * a + m * b) / (m + n)
+}
