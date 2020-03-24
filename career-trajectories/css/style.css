@@ -3,3 +3,78 @@
 body {
   font-family: 'Oxygen';
 }
+
+
+/***************************************************************** 
+ * Main setting
+ *****************************************************************/
+
+#svg-main {
+  width: 3000px;
+  height: 1000px;
+}
+
+
+/***************************************************************** 
+ * Sankey setting
+ *****************************************************************/
+#g-sankey-legend {
+  font-size: 15px;
+}
+
+/***************************************************************** 
+ * Left setting 
+ *****************************************************************/
+
+ /* g */
+#g-settings {
+  transform: translate(10px, 50px);
+}
+
+#g-filter-data {
+  transform: translate(10px, 220px);
+}
+
+ /* General */
+.left-title {
+  font-size: 15px;
+}
+
+.option-title {
+  font-size: 15px;
+  fill: black;
+}
+
+/* Dropdown */
+.option-dropdown-rect {
+  fill: white;
+}
+
+.option-dropdown-text {
+  font-size: 15px;
+  fill: gray;
+}
+
+.option-dropdown-line {
+  stroke: gray;
+}
+
+.option-dropdown-icon {
+  font-size: 15px;
+  fill: gray;
+}
+
+/* Optionbox */
+.optionbox-rect {
+  fill: white;
+  stroke: lightgray;
+}
+
+.item-bg {
+  fill: white;
+}
+
+.item-text {
+  font-size: 13px;
+  fill: gray;
+}
