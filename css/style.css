@@ -1,63 +1,20 @@
 
-/*
-font-family: 'Bree Serif', serif;
-font-family: 'Josefin Slab', serif;
-font-family: 'ABeeZee', sans-serif;
-font-family: 'Miriam Libre', sans-serif;
-font-family: 'Tinos', serif;
-font-family: 'Handlee', cursive;
-font-family: 'Arima Madurai', cursive;
-font-family: 'Boogaloo', cursive;
-font-family: 'Spectral SC', serif;
-font-family: 'Bubblegum Sans', cursive;
-font-family: 'Overlock', cursive;
-font-family: 'Coming Soon', cursive;
-font-family: 'Baumans', cursive;
-font-family: 'Athiti', sans-serif;
-font-family: 'Walter Turncoat', cursive;
-font-family: 'Anaheim', sans-serif;
-font-family: 'Oleo Script Swash Caps', cursive;
-font-family: 'Patrick Hand SC', cursive;
-font-family: 'Patrick Hand', cursive;
-font-family: 'Saira Extra Condensed',serif;
-font-family: 'Work Sans', sans-serif;
-font-family: 'Ubuntu', sans-serif;
-font-family: 'Slabo 27px', serif;
-font-family: 'Charmonman', cursive;
-font-family: 'PT Sans', sans-serif;
-font-family: 'Chakra Petch', sans-serif;
-font-family: 'Dosis', sans-serif;
-font-family: 'Shadows Into Light', cursive;
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-family: 'Ranga', cursive;
-font-family: 'Permanent Marker', cursive;
-font-family: 'Poiret One', cursive;
-font-family: 'Kalam', cursive;
-
-font-family: 'Gaegu', cursive;
-font-family: 'Gamja Flower', cursive;
-font-family: 'Yeon Sung', cursive;
-font-family: 'Cute Font', cursive;
-font-family: 'Do Hyeon', sans-serif;
-font-family: 'Noto Serif KR', sans-serif;
-font-family: 'Nanum Gothic', sans-serif;
-font-family: 'Nanum Pen Script', serif;
-font-family: 'Nanum Pen Script', cursive;
-font-family: 'Nanum Brush Script', cursive;
-font-family: 'East Sea Dokdo', cursive;
-*/
-@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
-
-.korean{
-    font-family: 'Nanum Pen Script', serif;
-    font-size:3rem;
-}
+/* Font - Barlow */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
 body{
-    font-family: 'Dosis', sans-serif;
-    padding-top:54px;
-    font-size:1.2rem;
-    color:#868e96
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  padding-top: 54px;
+  font-size: 1.2rem;
+  color: #868e96;
+}
+
+#img{
+  transform: translate(0px, 190px);
+}
+
+#navbarSupportedContent{
+  transform: translate(0px, 215px);
 }
 
 @media (min-width:992px){
@@ -68,7 +25,7 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight:300;
     color:#343a40
 }
@@ -82,19 +39,12 @@ h2{
     font-size:3.5rem
 }
 
-h3{
-    font-family: 'PT Sans', sans-serif;
-}
-
 .subheading{
     font-weight:500;
     font-family: 'Dosis', sans-serif;
     font-size:1.1rem
 }
-/*
-#495057
-#bd5d38
-*/
+
 .list-social-icons a{color:#495057}
 .list-social-icons a:hover{color:#495057}
 .list-social-icons a.fa-lg{font-size:1.75rem}
