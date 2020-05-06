@@ -13,16 +13,26 @@ body{
   transform: translate(0px, 190px);
 }
 
-#navbarSupportedContent{
-  transform: translate(0px, 215px);
+#name-small-window{
+  transform: translate(0px, -190px);
 }
 
-@media (min-width:992px){
-    body{
-        padding-top:0;
-        padding-left:17rem
-    }
+#navbarSupportedContent{
+  transform: translate(0px, 0px)!important;
 }
+
+
+@media (min-width:992px){
+  body{
+    padding-top:0;
+    padding-left:17rem
+  }
+
+  #navbarSupportedContent{
+    transform: translate(0px, 215px)!important;
+  }
+}
+
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Barlow Semi Condensed', sans-serif;

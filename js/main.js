@@ -8,6 +8,11 @@ function toggle_block(id) {
   }
 }
 
+
+// $(function(){
+//   $("#side-bar").load("import/side-bar.html");
+// });
+
 $(function(){
   $("#img").load("import/img.html");
 });
@@ -15,6 +20,10 @@ $(function(){
 $(function(){
   $("#small-window").load("import/small-window.html");
 });
+
+// $(function(){
+//   $("#sideNav").load("import/side-bar.html");
+// });
 
 $(function(){
   $("#header").load("import/header.html");
