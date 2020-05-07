@@ -20,16 +20,21 @@ hr {
   color: #EEEEEE;
 }
 
+.pagebreak{
+  page-break-before:always;
+}
+
 h1 {
   font-size: 43px;
 }
 
 h5 {
   font-size: 13px;
+  margin-block-end: 5px;
 }
 
 a {
-  color: #515151;
+  color: #3498db;
   text-decoration: none;
 }
 
@@ -84,8 +89,38 @@ img {
   color: #515151;
 }
 
+#publication{
+  padding-bottom: 15px;  
+}
+
 #publication
 h3 {
   display: none;
+}
+
+.authors {
+  font-color: #868e96;
+}
+
+.authors
+a {
+  color: #515151;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #f1c40f;
+}
+
+.publication-link 
+a {
+  padding-right: 5px;
+}
+
+.publication-link 
+i {
+  font-size: 10px;
+  transform: translate(0px, -1px);
 }
 
