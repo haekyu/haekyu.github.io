@@ -71,6 +71,12 @@ a:active, a:focus, a:hover{
   padding-top: 10px;
 }
 
+.resume-ul 
+i {
+  font-size: 13px;
+  transform: translate(0px, -1px);
+}
+
 @media (min-width:992px){
   body{
     padding-top:0;
@@ -128,6 +134,10 @@ i {
   text-align: justify; 
   display: none;
   transform: translate(0px, 5px);
+}
+
+.hr-project {
+  display: none;
 }
 
 h1,h2,h3,h4,h5,h6{

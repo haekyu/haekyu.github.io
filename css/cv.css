@@ -55,8 +55,15 @@ a:hover {
 .resume-ul {
   transform: translate(-40px, -10px);
   list-style-type: none;
-  width: 50vh;
+  width: 65vh;
   color: #515151;
+  text-align: justify;
+}
+
+.resume-ul 
+i {
+  font-size: 10px;
+  transform: translate(0px, -1px);
 }
 
 #main {
