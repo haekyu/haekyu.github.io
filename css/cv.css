@@ -120,6 +120,14 @@ a:hover {
   color: #f1c40f;
 }
 
+.bibtex-href {
+  display: none;
+}
+
+.detail-href {
+  display: none;
+}
+
 .publication-link 
 a {
   padding-right: 5px;
