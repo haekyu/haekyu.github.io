@@ -8,11 +8,20 @@ body {
 hr {
   border-style: solid;
   border-width: 0.5px;
-  color: #CCCCCC;
+  color: #EEEEEE;
 }
 
 h1 {
   font-size: 45px;
+}
+
+a {
+  color: #515151;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e6b800; 
 }
 
 #main {
@@ -42,8 +51,22 @@ img {
 
 .education-info {
   transform: translate(0px, -15px);
+  color: #515151;
 }
 
-.text-primary {
+.research-experience-title {
+  display: inline;
+}
+
+.research-experience-date {
   float: right;
+  text-align: right;
+  display: inline;
+}
+
+.research-experience-ul {
+  transform: translate(-40px, -10px);
+  list-style-type: none;
+  width: 60vh;
+  color: #515151;
 }
