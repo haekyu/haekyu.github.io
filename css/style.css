@@ -57,7 +57,9 @@ a:active, a:focus, a:hover{
 }
 
 .resume-content {
-  width: 50vh!important;
+  /*width: 100vh;*/
+  /*!important;*/
+  width: 100%;
 }
 
 .resume-ul {
@@ -83,9 +85,9 @@ a:active, a:focus, a:hover{
     padding-bottom: 0px!important; 
   }
 
-  .resume-content {
+  /*.resume-content {
     width: 100vh!important;
-  }
+  }*/
 }
 
 .authors {
