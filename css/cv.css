@@ -24,6 +24,10 @@ h1 {
   font-size: 43px;
 }
 
+h5 {
+  font-size: 13px;
+}
+
 a {
   color: #515151;
   text-decoration: none;
@@ -31,6 +35,23 @@ a {
 
 a:hover {
   color: #e6b800; 
+}
+
+.title {
+  display: inline;
+}
+
+.date {
+  float: right;
+  text-align: right;
+  display: inline;
+}
+
+.resume-ul {
+  transform: translate(-40px, -10px);
+  list-style-type: none;
+  width: 50vh;
+  color: #515151;
 }
 
 #main {
@@ -63,19 +84,8 @@ img {
   color: #515151;
 }
 
-.title {
-  display: inline;
+#publication
+h3 {
+  display: none;
 }
 
-.date {
-  float: right;
-  text-align: right;
-  display: inline;
-}
-
-.resume-ul {
-  transform: translate(-40px, -10px);
-  list-style-type: none;
-  width: 50vh;
-  color: #515151;
-}

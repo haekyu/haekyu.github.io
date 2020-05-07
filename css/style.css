@@ -9,6 +9,19 @@ body{
   color: #868e96;
 }
 
+a{
+  color: #3498db;
+}
+
+a:active, a:focus, a:hover{
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+.text-primary{
+  color:#868e96!important
+}
+
 #img{
   transform: translate(0px, 190px);
 }
@@ -75,25 +88,61 @@ body{
   }
 }
 
+.authors {
+  font-color: #868e96;
+}
+
+.authors
+a {
+  color: #868e96;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #f1c40f;
+}
+
+.publication-link 
+a {
+  padding-right: 10px;
+}
+
+.publication-link 
+i {
+  font-size: 13px;
+  transform: translate(0px, -1px);
+}
+
+.bibtex {
+  display: none;
+  transform: translate(-105px, 15px);
+  font-size: 15px;
+}
+
+.detail {
+  text-align: justify; 
+  display: none;
+  transform: translate(0px, 5px);
+}
+
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight:300;
-    color:#343a40
+  font-weight:300;
+  color:#343a40
 }
 
 h1{
-    font-size:4rem;
-    line-height:5.5rem
+  font-size: 4rem;
+  line-height: 5.5rem
 }
 
 h2{
-    font-size:3.5rem
+  font-size: 3.5rem
 }
 
 .subheading{
-    font-weight:500;
-    font-family: 'Dosis', sans-serif;
-    font-size:1.1rem
+  font-weight: 500;
+  font-size: 1.1rem
 }
 
 .list-social-icons a{color:#495057}
@@ -103,8 +152,7 @@ h2{
 .list-icons .list-inline-item i:hover{color:#DB890B} 
 
 #sideNav .navbar-nav .nav-item .nav-link{
-    font-weight:600;
-    /*text-transform:uppercase*/
+  font-weight: 600;
 }
 
 @media (min-width:992px){
@@ -177,14 +225,10 @@ section.resume-section .resume-item .resume-date .resume-overview{
 }
 
 .bg-primary{
-    background-color:#A4C724!important
+  background-color:#A4C724!important
 }
-.text-primary{
-    color:#BF8D78!important
-}
-a{color:#BF8D78}
-a:active,a:focus,a:hover{color:#BF8D78}
+
 
 .bg-primary {
-    background-color: #555555!important;
+  background-color: #555555!important;
 }
