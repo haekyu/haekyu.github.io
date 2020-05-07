@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: #515151;
+}
+
+hr {
+  border-style: solid;
+  border-width: 0.5px;
+  color: #CCCCCC;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+#main {
+  max-width: 700px;
+  transform: translate(10px, 50px);
+  font-size: 15px;
+}
+
+#intro {
+  display: none;
+}
+
+#research-interest {
+  padding-bottom: 25px;
+  font-size: 20px;
+}
+
+#education
+img {
+  display: none;
+}
+
+.school {
+  transform: translate(-200px, 0px);
+  padding-bottom: 5px;
+}
+
+.education-info {
+  transform: translate(0px, -15px);
+}
+
+.text-primary {
+  float: right;
+}

@@ -21,6 +21,35 @@ body{
   transform: translate(0px, 0px)!important;
 }
 
+#education img{
+  display: none!important;
+}
+
+.school {
+  display: table-cell;
+  transform: translate(-65px, -10px)!important;
+  padding-bottom: 40px!important; 
+  width: 100vh;
+}
+
+.research-experience-title {
+  display: inline;
+  padding-bottom: 10px;
+}
+
+.research-experience-date {
+  float: right;
+  text-align: right;
+  display: inline;
+}
+
+.research-experience {
+  width: 50vh!important;
+}
+
+.research-experience-ul {
+  padding-top: 10px;
+}
 
 @media (min-width:992px){
   body{
@@ -31,8 +60,20 @@ body{
   #navbarSupportedContent{
     transform: translate(0px, 215px)!important;
   }
-}
 
+  #education img{
+    display: inline-block!important;
+  }
+
+  .school {
+    transform: translate(0px, -35px)!important;
+    padding-bottom: 0px!important; 
+  }
+
+  .research-experience {
+    width: 100vh!important;
+  }
+}
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Barlow Semi Condensed', sans-serif;

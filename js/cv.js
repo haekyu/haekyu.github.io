@@ -1,27 +1,7 @@
-function toggle_block(id) {
-  var block = document.getElementById(id)
-  var block_display = block.style.display
-  if (block_display == 'none') {
-    block.style.display = 'block'
-  } else {
-    block.style.display = 'none'
-  }
-}
 
-$(function(){
-  $("#img").load("import/img.html");
-});
-
-$(function(){
-  $("#small-window").load("import/small-window.html");
-});
 
 $(function(){
   $("#header").load("import/header.html");
-});
-
-$(function(){
-  $("#news").load("import/news.html");
 });
 
 $(function(){
@@ -47,19 +27,4 @@ $(function(){
 $(function(){
   $("#misc").load("import/misc.html");
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
