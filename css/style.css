@@ -32,22 +32,22 @@ body{
   width: 100vh;
 }
 
-.research-experience-title {
+.title {
   display: inline;
   padding-bottom: 10px;
 }
 
-.research-experience-date {
+.date {
   float: right;
   text-align: right;
   display: inline;
 }
 
-.research-experience {
+.resume-content {
   width: 50vh!important;
 }
 
-.research-experience-ul {
+.resume-ul {
   padding-top: 10px;
 }
 
@@ -70,7 +70,7 @@ body{
     padding-bottom: 0px!important; 
   }
 
-  .research-experience {
+  .resume-content {
     width: 100vh!important;
   }
 }

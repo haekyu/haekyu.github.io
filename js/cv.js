@@ -1,5 +1,3 @@
-
-
 $(function(){
   $("#header").load("import/header.html");
 });

@@ -63,19 +63,19 @@ img {
   color: #515151;
 }
 
-.research-experience-title {
+.title {
   display: inline;
 }
 
-.research-experience-date {
+.date {
   float: right;
   text-align: right;
   display: inline;
 }
 
-.research-experience-ul {
+.resume-ul {
   transform: translate(-40px, -10px);
   list-style-type: none;
-  width: 60vh;
+  width: 50vh;
   color: #515151;
 }
