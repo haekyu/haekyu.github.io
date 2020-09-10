@@ -6,6 +6,132 @@
 
     <h3 class="mb-5">2020</h3>
 
+    <!-- Bluff -->
+    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+      <div class="resume-content mr-auto">
+
+        <h5>
+          Bluff: Interactively Deciphering Adversarial Attacks on Deep Neural Networks
+        </h5>
+        
+        <div class="authors subheading">
+          <a href="http://nilakshdas.com">Nilaksh Das*</a>,
+          <a href="https://haekyu.github.io"><u>Haekyu Park</u>*</a>,
+          <a href="https://zijie.wang/">Zijie Jay Wang</a>,
+          <a href="https://fredhohman.com">Fred Hohman</a>,
+          <a href="https://www.robfirstman.com/">Robert Firstman</a>,
+          <a href="https://www.linkedin.com/in/emily-rogers-1a828598">Emily Rogers</a>, and 
+          <a href="https://www.cc.gatech.edu/~dchau/">Duen Horng Chau</a>
+        </div>
+
+        <div class="venue subheading">
+          IEEE Conference on Visual Analytics Science and Technology,
+          (<a href="http://ieeevis.org/year/2020/welcome">VAST</a>), Short Paper,  
+          Online, 2020. <br>
+          * Authors contributed equally.
+        </div>
+
+        <div class="publication-link subheading">
+          <a href="https://poloclub.github.io/bluff">
+            <i class="fas fa-play"></i>
+            Demo
+          </a>
+          <a href="https://arxiv.org/abs/2009.02608">
+            <i class="far fa-file-pdf"></i>
+            PDF
+          </a>
+          <a href="https://arxiv.org/abs/2009.02608">
+            <i class="far fa-file-alt"></i>
+            arXiv
+          </a>
+          <a href=#none class='bibtex-href' onclick=toggle_block('bibtex-bluff');>
+            <i class="far fa-bookmark"></i> 
+            BibTeX
+          </a>
+          <a href=#none class='detail-href' onclick=toggle_block('detail-bluff');>
+            <i class="fas fa-info"></i>
+            Details
+          </a>
+          <pre id='bibtex-bluff' class='bibtex' style='display: none;'>
+            @article{das2020bluff,
+              title={Bluff: Interactively Deciphering Adversarial Attacks on Deep Neural Networks},
+              author={Das, Nilaksh and Park, Haekyu and Wang, Zijie J and Hohman, Fred and Firstman, Robert and Rogers, Emily and Horng, Duen and others},
+              booktitle={IEEE Visualization Conference (VIS)},
+              year={2020}
+            }
+          </pre>
+          <div id='detail-bluff' class='detail' style='display: none;'>
+            Bluff is an interactive system for visualizing, characterizing, and deciphering adversarial attacks on vision-based neural networks.
+            Bluff allows people to flexibly visualize and compare the activation pathways for benign and attacked images, revealing mechanisms that adversarial attacks employ to inflict harm on a model.
+            Bluff is open-sourced and runs in modern web browsers.
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Bluff END -->
+
+    <!-- CNN Explainer -->
+    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+      <div class="resume-content mr-auto">
+
+        <h5>
+          CNN Explainer: Learning Convolutional Neural Networks with Interactive Visualization
+        </h5>
+        
+        <div class="authors subheading">
+          <a href="https://zijie.wang/">Zijie Jay Wang</a>,
+          <a href="https://www.linkedin.com/in/robert-turko/">Robert Turko</a>,
+          <a href="https://oshaikh.com/">Omar Shaikh</a>,
+          <a href="https://haekyu.github.io"><u>Haekyu Park</u></a>,
+          <a href="http://nilakshdas.com">Nilaksh Das</a>,
+          <a href="https://fredhohman.com">Fred Hohman</a>,
+          <a href="https://minsuk.com/">Minsuk Kahng</a>,
+          <a href="https://www.cc.gatech.edu/~dchau/">Duen Horng Chau</a>
+        </div>
+
+        <div class="venue subheading">
+          IEEE Conference on Visual Analytics Science and Technology,
+          (<a href="http://ieeevis.org/year/2020/welcome">VAST</a>),  
+          Online, 2020. <br>
+        </div>
+
+        <div class="publication-link subheading">
+          <a href="https://poloclub.github.io/cnn-explainer/">
+            <i class="fas fa-play"></i>
+            Demo
+          </a>
+          <a href="https://arxiv.org/pdf/2004.15004.pdf">
+            <i class="far fa-file-pdf"></i>
+            PDF
+          </a>
+          <a href=#none class='bibtex-href' onclick=toggle_block('bibtex-cnnexplainer');>
+            <i class="far fa-bookmark"></i> 
+            BibTeX
+          </a>
+          <a href=#none class='detail-href' onclick=toggle_block('detail-cnnexplainer');>
+            <i class="fas fa-info"></i>
+            Details
+          </a>
+          <pre id='bibtex-cnnexplainer' class='bibtex' style='display: none;'>
+            @article{wangCNNExplainerLearning2020,
+              title = {{{CNN Explainer}}: {{Learning Convolutional Neural Networks}} with {{Interactive Visualization}}},
+              shorttitle = {{{CNN Explainer}}},
+              author = {Wang, Zijie J. and Turko, Robert and Shaikh, Omar and Park, Haekyu and Das, Nilaksh and Hohman, Fred and Kahng, Minsuk and Chau, Duen Horng},
+              year = {2020},
+              journal={IEEE Conference on Visual Analytics Science and Technology (VAST)},
+              publisher={IEEE}
+            }
+          </pre>
+          <div id='detail-cnnexplainer' class='detail' style='display: none;'>
+            We present CNN Explainer, an interactive visualization tool designed for non-experts to learn and examine convolutional neural networks (CNNs), a foundational deep learning model architecture. Our tool addresses key challenges that novices face while learning about CNNs, which we identify from interviews with instructors and a survey with past students. CNN Explainer tightly integrates a model overview that summarizes a CNN’s structure, and on-demand, dynamic visual explanation views that help users understand the underlying components of CNNs. Through smooth transitions across levels of abstraction, our tool enables users to inspect the interplay between low-level mathematical operations and high-level model structures. A qualitative user study shows that CNN EXPLAINER helps users more easily understand the inner workings of CNNs, and is engaging and enjoyable to use. We also derive design lessons from our study. Developed using modern web technologies, CNN EXPLAINER runs locally in users’ web browsers without the need for installation or specialized hardware, broadening the public’s education access to modern deep learning techniques.
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- CNN Explainer END -->
+
     <!-- Argo -->
     <div class="resume-item d-flex flex-column flex-md-row mb-5">
       <div class="resume-content mr-auto">
@@ -20,7 +146,7 @@
           Anish Upadhayay,
           <a href="https://oshaikh.com/">Omar Shaikh</a>,
           <a href="https://scottfreitas.com">Scott Freitas</a>,
-          <a href="https://haekyu.github.io"><u>Haekyu Park</u>*</a>,
+          <a href="https://haekyu.github.io"><u>Haekyu Park</u></a>,
           <a href="https://zijie.wang/">Zijie Jay Wang</a>,
           Susanta Routray,
           Matthew Hull, and 
@@ -250,7 +376,7 @@
     <!-- Summit END -->
 
     <!-- WiML 2019 -->
-    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+    <div class="pagebreak resume-item d-flex flex-column flex-md-row mb-5">
       <div class="resume-content mr-auto">
         
         <h5>
@@ -324,7 +450,7 @@
 
 
     <!-- MLsploit -->
-    <div class="pagebreak resume-item d-flex flex-column flex-md-row mb-5">
+    <div class="resume-item d-flex flex-column flex-md-row mb-5">
       <div class="resume-content mr-auto">
         
         <h5>
