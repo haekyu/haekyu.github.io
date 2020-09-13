@@ -3,6 +3,10 @@ $(function(){
 });
 
 $(function(){
+  $("#intro").load("import/intro.html");
+});
+
+$(function(){
   $("#education").load("import/education.html");
 });
 
