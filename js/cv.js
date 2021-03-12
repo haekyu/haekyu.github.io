@@ -2,9 +2,9 @@ $(function(){
   $("#header").load("import/header.html");
 });
 
-$(function(){
-  $("#intro").load("import/intro.html");
-});
+// $(function(){
+//   $("#intro").load("import/intro.html");
+// });
 
 $(function(){
   $("#education").load("import/education.html");
