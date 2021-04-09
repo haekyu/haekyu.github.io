@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Programming Languages",
+    "contents": [
+      "Python, JavaScript, HTML, R, Matlab, Java, C, C++, Ocaml, Scheme"
+    ]
+  },
+  {
+    "name": "Machine Learning / Deep Learning / Data Science",
+    "contents": [
+      "TensorFlow, PyTorch, Keras, scikit-learn, OpenCV, Numpy, Pandas, SciPy, NetworkX"
+    ]
+  },
+  {
+    "name": "GPU-accelerated Data Science",
+    "contents": [
+      "cuGraph, cuDF, cuML, BlazingSQL, OpenCL"
+    ]
+  },
+  {
+    "name": "Data Visualization",
+    "contents": [
+      "D3.js, Three.js, WebGL, HoloViews, Matplotlib, WebGL, ggplot"
+    ]
+  }
+]

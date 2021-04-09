@@ -1,0 +1,34 @@
+#hello {
+  font-size: 35px;
+  font-family: 'Caveat Brush', cursive;
+  background-color: var(--blue-bg);
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+#about-me {
+  font-size: 20px;
+  padding-top: 15px;
+  text-align: justify; 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.about-logo {
+  height: 16px;
+  transform: translate(0px, 1px);
+}
+  
+#news {
+  font-size: 20px;
+  text-align: justify; 
+  padding-top: 70px;
+}
+
+#old-news {
+  color: #555555;
+  font-size: 18px;
+  padding-top: 3px;
+}

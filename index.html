@@ -2,84 +2,67 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Haekyu Park - CS PhD Student at Georgia Tech</title>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/logo.svg">
+
+    <!-- Import -->
+    <link href="./style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script type="module" src="./contents/contents.js"></script>
+
+    <!-- Sidebar -->
+    <script type="module" src="./sidebar/sidebar.js"></script>
+    <link href="./sidebar/sidebar.css" rel="stylesheet"></script>
+
+    <!-- Contents -->
+    <link href="./contents/000_about/about.css" rel="stylesheet"></script>
+    <link href="./contents/100_education/education.css" rel="stylesheet"></script>
+    <script type="module" src="./contents/200_experience/experience.js"></script>
+    <script type="module" src="./contents/300_honors/honors.js"></script>
+    <script type="module" src="./contents/400_grants/grants.js"></script>
+    <script type="module" src="./contents/500_publication/publication.js"></script>
+    <link href="./contents/500_publication/publication.css" rel="stylesheet"></script>
+    <script type="module" src="./contents/600_projects/projects.js"></script>
+    <link href="./contents/600_projects/projets.css" rel="stylesheet"></script>
+    <script type="module" src="./contents/700_misc/misc.js"></script>
+    <link href="./contents/700_misc/misc.css" rel="stylesheet"></script>
+
   </head>
 
-  <body id="page-top">
-    
-    <!-- SideBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <div id="img"></div>
-      <div id="small-window"></div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Research Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#honors">Honors and Awards</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#publication">Publication</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#project">Project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#misc">Miscellanies</a>
-          </li>
-        </ul>
+  <body>
+
+    <div id="sidebar">
+      <div id="intro"></div>
+      <div id="anchor"></div>
+      <div id="footer"></div>
+    </div>
+
+    <div id="contents">
+      <div id="about" class="contents-block"></div>
+      <div id="education" class="contents-block"></div>
+      <div id="experience" class="contents-block"></div>
+      <div id="honors" class="contents-block"></div>
+      <div id="grants" class="contents-block"></div>
+      <div id="publication" class="contents-block"></div>
+      <div id="projects" class="contents-block">
+        <div id="open-projects"></div>
+        <div id="other-projects"></div>
       </div>
-    </nav>
-
-    <!-- Main -->
-    <div class="container-fluid p-0">
-      
-      <!-- About -->
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <div id="header"></div>
-          <div id="news"></div>
-        </div>
-      </section>
-      <hr class="m-0">
-
-      <!-- Education -->
-      <div id="education"></div>
-
-      <!-- EXPERIENCE -->
-      <div id="experience"></div>
-      
-      <!-- Honors and Awards -->
-      <div id="honors"></div>
-      
-      <!-- PUBLICATION -->
-      <div id="publication"></div>
-
-      <!-- PROJECT -->
-      <div id="project"></div>
-
-      <!-- Miscallanies -->
-      <div id="misc"></div>
-
+      <div id="misc" class="contents-block">
+        <div id="misc-talks"></div>
+        <div id="misc-tutorial"></div>
+        <div id="misc-teaching"></div>
+        <div id="misc-mentoring"></div>
+        <div id="misc-certification"></div>
+        <div id="misc-service"></div>
+        <div id="misc-skills"></div>
+      </div>
     </div>
 
   </body>
 
-</html>
+  
 
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="js/resume.min.js"></script>
+</html>

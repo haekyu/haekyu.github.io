@@ -1,0 +1,39 @@
+.publication-item {
+  padding-bottom: 10px;
+}
+
+.publication-title {
+  font-weight: bold;
+}
+
+#publication a {
+  color: var(--gray-text);
+}
+
+#publication a:hover {
+  color: var(--pink-text);
+}
+
+.publication-venue {
+  font-style: italic;
+}
+
+#publication i {
+  padding-right: 5px;
+  font-size: 13px;
+  transform: translate(0px, -1px);
+}
+
+.publication-href {
+  padding-right: 10px;
+}
+
+.publication-detail {
+  padding-top: 10px;
+  text-align: justify;
+}
+
+.publication-bibtex {
+  font-size: 15px;
+  overflow: scroll;
+}
