@@ -38,10 +38,14 @@
 
   #intro-cv {
     font-size: 18px!important;
-    display: inline-block;
+    display: inline-block!important;
     width: fit-content;
     padding-right: 10px;
     padding-top: 2px;
+  }
+
+  #intro-cv-long {
+    display: none;
   }
 
   #intro-google-scholar {

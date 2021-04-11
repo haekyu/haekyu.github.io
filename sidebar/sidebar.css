@@ -27,6 +27,10 @@
   padding-right: 7px;
 }
 
+#intro-cv {
+  display: none;
+}
+
 #footer {
   bottom: 50px;
   position: fixed;

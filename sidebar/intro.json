@@ -15,6 +15,13 @@
       "icon": "cv"
     } 
   },
+  { "cv-long": 
+    {
+      "text": "Curriculum Vitae",
+      "link": "https://haekyu.com/assets/haekyu_cv.pdf",
+      "icon": "cv"
+    } 
+  },
   { "google-scholar": 
     {
       "text": "Google Scholar",
