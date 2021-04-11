@@ -57,7 +57,7 @@ function gen_publication() {
       if ('detail' in item) {
         let detail_option = document.createElement('a')
         detail_option.href = '#none'
-        detail_option.className = 'publication-href'
+        detail_option.className = 'publication-href publication-detail'
         detail_option.onclick = function() { 
           toggle_block(`detail-${item['id']}`) 
         }
@@ -70,7 +70,7 @@ function gen_publication() {
       if ('bibtex' in item) {
         let bibtex_option = document.createElement('a')
         bibtex_option.href = '#none'
-        bibtex_option.className = 'publication-href'
+        bibtex_option.className = 'publication-href publication-bibtex'
         bibtex_option.onclick = function() { 
           toggle_block(`bibtex-${item['id']}`) 
         }

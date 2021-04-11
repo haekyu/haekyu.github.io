@@ -1,31 +1,56 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
   <title>CV - Haekyu Park</title>
-  <link href="css/cv.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./img/logo.svg">
+
+  <!-- Import -->
+  <link href="style_cv.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/cv.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <script type="module" src="./contents/contents.js"></script>
+  <script type="module" src="./sidebar/sidebar.js"></script>
+  <script type="module" src="./contents/200_experience/experience.js"></script>
+  <script type="module" src="./contents/300_honors/honors.js"></script>
+  <script type="module" src="./contents/400_grants/grants.js"></script>
+  <script type="module" src="./contents/500_publication/publication.js"></script>
+  <script type="module" src="./contents/600_projects/projects.js"></script>
+  <script type="module" src="./contents/700_misc/misc.js"></script>
+  
 </head>
 
 <body>
-  <div id="main">
-    <div id="header"></div>
-    <hr>
+  
+  <div id="sidebar">
     <div id="intro"></div>
-    <hr>
-    <div id="education"></div>
-    <hr>
-    <div id="experience"></div>
-    <hr>
-    <div id="honors"></div>
-    <hr>
-    <div id="publication"></div>
-    <hr>
-    <div id="project"></div>
-    <hr>
-    <div id="misc"></div>
+    <div id="anchor"></div>
+    <div id="footer"></div>
   </div>
+
+  <div id="contents">
+    <div id="about" class="contents-block"></div>
+    <div id="education" class="contents-block"></div>
+    <div id="experience" class="contents-block"></div>
+    <div id="honors" class="contents-block"></div>
+    <div id="grants" class="contents-block"></div>
+    <div id="publications" class="contents-block"></div>
+    <div id="projects" class="contents-block">
+      <div id="open-projects"></div>
+      <div id="other-projects"></div>
+    </div>
+    <div id="misc" class="contents-block">
+      <div id="misc-talks"></div>
+      <div id="misc-tutorial"></div>
+      <div id="misc-teaching"></div>
+      <div id="misc-mentoring"></div>
+      <div id="misc-certification"></div>
+      <div id="misc-service"></div>
+      <div id="misc-skills"></div>
+    </div>
+  </div>
+
 </body>
 
 </html>
