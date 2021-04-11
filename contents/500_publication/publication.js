@@ -7,7 +7,7 @@ function gen_publication() {
   $.getJSON('./contents/500_publication/publication.json', function(data) {
 
     // Generate title
-    let publication = document.getElementById('publication')
+    let publication = document.getElementById('publications')
     let title = document.createElement('div')
     title.id = 'publication-title'
     title.className = 'title'
