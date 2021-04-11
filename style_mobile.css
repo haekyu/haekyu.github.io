@@ -1,0 +1,83 @@
+@media (max-width: 992px) {
+
+  body {
+    display: block;
+    padding: 10px;
+  }
+
+  #intro {
+    padding-top: 30px;
+  }
+
+  #profile-img {
+    display: none;
+  }
+
+  #intro-name {
+    padding-top: 0px!important;
+    font-size: 20px!important;
+    display: inline-block;
+    width: fit-content;
+    padding-right: 10px;
+  }
+
+  #intro-position {
+    font-size: 15px!important;
+    display: inline-block;
+    padding-right: 100px;
+  }
+
+  #intro-email {
+    font-size: 15px!important;
+    display: inline-block;
+    width: fit-content;
+    padding-right: 10px;
+  }
+
+  #intro-cv {
+    font-size: 15px!important;
+    display: inline-block;
+    width: fit-content;
+    padding-right: 10px;
+  }
+
+  #intro-google-scholar {
+    font-size: 15px!important;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  #footer {
+    display: none;
+  }
+
+  #anchor {
+    position: absolute;
+    top: 0px; 
+  }
+
+  #anchor-ul {
+    font-size: 15px;
+    transform: translate(0px, -65px);
+  }
+
+  .anchor-li {
+    float: left;
+  }
+
+  .anchor-li a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  #contents {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    transform: translate(0px, 20px);
+  }
+}
