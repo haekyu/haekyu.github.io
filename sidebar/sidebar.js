@@ -103,10 +103,16 @@ function get_css_val(x) {
 function highlight_navigation() {
 
   let contents_items = document.getElementById('contents').children
-  var scroll_position = $('#contents').scrollTop()
+  let scroll_position = $('#contents').scrollTop()
+  let offset = 0
+  if (window.innerWidth <= 992) {
+    offset = getComputedStyle(document.getElementById('contents')).top
+    offset = offset.replace('px', '')
+    offset = parseFloat(offset)
+  }
 
   for (let item of contents_items) {
-    if (item.offsetTop > scroll_position) {
+    if (item.offsetTop > scroll_position - offset) {
       $(`.anchor-href`).css(
         'color', get_css_val('--gray-text')
       )
