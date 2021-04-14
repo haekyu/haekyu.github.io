@@ -5,6 +5,7 @@
     "contents": [
       "Keywords: GPU-accelerated Data Science, RAPIDS, NVIDIA Teaching Kits",
       "The first version of its GPU Accelerated Data Science Teaching Kit for educators.",
+      "Presented at NVIDIA's Graphics Technology Conference (<a href='https://www.nvidia.com/en-us/gtc/'>GTC</a>) 2021: Bridging Data Analytics and Machine Learning Skill Gaps with RAPIDS and the New Accelerated Data Science Teaching Kit for University Educators [S31763]",
       "<a href='https://www.nvidia.com/en-us/training/teaching-kits/'><i class='fas fa-globe'></i>Data Science Teaching Kit</a> <a href='https://blogs.nvidia.com/blog/2021/02/25/dli-data-science-teaching-kits/'><i class='fas fa-globe'></i>Blog</a>"
     ]
   },
