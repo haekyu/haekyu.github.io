@@ -89,7 +89,9 @@ function gen_anchor() {
 
 function gen_footer() {
   let footer = document.getElementById('footer')
-  footer.innerText = 'Last updated on Apr 9 2021'
+  let last_updated = '<div class="footer-comp">Last updated on Apr 14 2021</div>'
+  let designed_by = '<div class="footer-comp">Designed and created by Haekyu Park</div>'
+  footer.innerHTML = last_updated + designed_by
 }
 
 function mk_fst_letter_capital(s) {
