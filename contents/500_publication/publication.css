@@ -37,3 +37,7 @@
   font-size: 15px;
   overflow: scroll;
 }
+
+.publication-bibtex-item {
+  font-size: 18px;
+}
