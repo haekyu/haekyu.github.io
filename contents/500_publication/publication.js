@@ -70,7 +70,7 @@ function gen_publication() {
       if ('bibtex' in item) {
         let bibtex_option = document.createElement('a')
         bibtex_option.href = '#none'
-        bibtex_option.className = 'publication-href publication-bibtex'
+        bibtex_option.className = 'publication-href'
         bibtex_option.onclick = function() { 
           toggle_block(`bibtex-${item['id']}`) 
         }
