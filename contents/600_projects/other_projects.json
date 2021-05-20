@@ -23,7 +23,7 @@
     "contents": [
       "Keywords: RAPIDS, NVIDIA, GPU-acceleration, Graph, Personalized Page Rank",
       "We showcase an approach to flagging anomalous network communications in a large graph using a combination of structural graph features and graph analytics, running end-to-end in RAPIDS.",
-      "Presented at <a href='https://github.com/rapidsai/notebooks-contrib/tree/master/conference_notebooks/KDD_2019'>KDD 2019 NVIDIA RAPIDS tutorial</a> with the <a href='https://github.com/rapidsai/notebooks-contrib/tree/master/conference_notebooks/KDD_2019/cyber'>cybersecurity use case notebook.</a>"
+      "Presented at <a href='https://github.com/rapidsai-community/notebooks-contrib/tree/4ee3f2dfb92ee9e947e8d6e06b682fcaa1b2d44b/the_archive/archived_rapids_event_notebooks/KDD_2019/cyber'>cybersecurity use case notebook.</a>"
     ]
   },
   {
