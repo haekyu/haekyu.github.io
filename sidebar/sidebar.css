@@ -1,10 +1,12 @@
 #sidebar { 
-  font-family: 'Caveat Brush', cursive;
+  font-family: 'Pangolin', cursive;
+  padding-left: 50px;
+  padding-top: 50px;
 }
 
 .intro {
   width: 225px;
-  font-size: 18px;
+  font-size: 15px;
   
 }
 
@@ -14,7 +16,7 @@
 }
 
 #intro-name {
-  font-size: 45px;
+  font-size: 40px;
   padding-top: 20px;
   padding-bottom: 10px; 
   font-weight: bold;
@@ -32,15 +34,15 @@
 }
 
 #footer {
-  bottom: 50px;
+  bottom: 20px;
   position: fixed;
-  font-size: 15px;
+  font-size: 13px;
   color: var(--lightgray-text);
 }
 
 #anchor {
-  padding-top: 60px;
-  font-size: 25px;
+  padding-top: 20px;
+  font-size: 20px;
   text-align: center;
   transform: translate(-10px, 0px);
 }

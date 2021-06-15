@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Caveat+Brush&family=Just+Another+Hand&family=Kavivanar&family=Patrick+Hand&family=Shadows+Into+Light+Two&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Semi+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Pangolin&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&family=Signika:wght@400;700&display=swap');
 /* 
+font-family: 'Baloo Tammudu 2', cursive;
+font-family: 'Balsamiq Sans', cursive;
 font-family: 'Barlow Semi Condensed', sans-serif;
-font-family: 'Caveat Brush', cursive;
-font-family: 'Just Another Hand', cursive;
-font-family: 'Kavivanar', cursive;
-font-family: 'Patrick Hand', cursive;
-font-family: 'Shadows Into Light Two', cursive;
-font-family: 'Sriracha', cursive;
+font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Pangolin', cursive;
+font-family: 'Rubik', sans-serif;
+font-family: 'Signika', sans-serif;
 */
 
 :root {
@@ -19,8 +19,7 @@ font-family: 'Sriracha', cursive;
 }
 
 body {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  padding: 50px;
+  font-family: 'Barlow Semi Condensed', sans-serif;  
   display: flex;
   color: var(--gray-text);
   font-size: 18px;
@@ -38,16 +37,16 @@ a:hover {
 #contents {
   padding-left: 50px;
   padding-right: 50px;
-  width: calc(100vw - 550px);
+  padding-left: 50px;
+  padding-top: 50px;
   flex: 1;
   overflow: scroll;
-  height: calc(100vh - 100px);
   scroll-behavior: smooth;
 }
 
 .title {
   font-size: 30px;
-  font-family: 'Caveat Brush', cursive;
+  font-family: 'Pangolin', cursive;
   background-color: var(--blue-bg);
   width: fit-content;
   padding-left: 10px;
