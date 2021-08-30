@@ -11,15 +11,15 @@
       "<a href='https://fredhohman.com'>Fred Hohman</a>",
       "<a href='https://www.cc.gatech.edu/~dchau/'>Duen Horng Chau</a>"
     ],
-    "venue": "IEEE Transactions on Visualization and Computer Graphics (TVCG), 2021",
+    "venue": "IEEE Visualization Conference (VIS), Virtual, 2021",
     "links": {
       "paper": "https://haekyu.com/assets/21_vis_NeuroCartography.pdf"
     },
     "bibtex": [
-      "@article{park2021neurocartography,",
+      "@article{park2021neurocartography,", 
       "title={{NeuroCartography: Scalable Automatic Visual Summarization of Concepts in Deep Neural Networks}},",
       "author={Park, Haekyu and Das, Nilaksh and Duggal, Rahul and Wright, Austin P. and Shaikh, Omar and Hohman, Fred and Chau, Duen Horng},",
-      "booktitle={IEEE Transactions on Visualization and Computer Graphics (TVCG),",
+      "booktitle={IEEE Visualization Conference, (VIS),",
       "year={2021}",
       "}"
     ],
