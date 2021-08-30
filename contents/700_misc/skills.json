@@ -12,15 +12,15 @@
     ]
   },
   {
-    "name": "Data Visualization / Interface",
-    "contents": [
-      "React, D3.js, Three.js, WebGL, HoloViews, Matplotlib, WebGL, ggplot"
-    ]
-  },
-  {
     "name": "GPU-accelerated Data Science",
     "contents": [
       "cuGraph, cuDF, cuML, BlazingSQL, OpenCL"
     ]
   },
+  {
+    "name": "Interface / Data Visualization",
+    "contents": [
+      "React, D3.js, Three.js, WebGL, HoloViews, Matplotlib, WebGL, ggplot"
+    ]
+  }
 ]
