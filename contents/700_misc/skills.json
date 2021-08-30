@@ -2,7 +2,7 @@
   {
     "name": "Programming Languages",
     "contents": [
-      "Python, JavaScript, HTML, R, Matlab, Java, C, C++, Ocaml, Scheme"
+      "Python, JavaScript, TypeScript, HTML, R, Matlab, Java, C, C++, Ocaml, Scheme"
     ]
   },
   {
@@ -12,15 +12,15 @@
     ]
   },
   {
+    "name": "Data Visualization / Interface",
+    "contents": [
+      "React, D3.js, Three.js, WebGL, HoloViews, Matplotlib, WebGL, ggplot"
+    ]
+  },
+  {
     "name": "GPU-accelerated Data Science",
     "contents": [
       "cuGraph, cuDF, cuML, BlazingSQL, OpenCL"
     ]
   },
-  {
-    "name": "Data Visualization",
-    "contents": [
-      "D3.js, Three.js, WebGL, HoloViews, Matplotlib, WebGL, ggplot"
-    ]
-  }
 ]
