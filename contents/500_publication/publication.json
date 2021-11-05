@@ -13,7 +13,8 @@
     ],
     "venue": "IEEE Visualization Conference (VIS), Virtual, 2021",
     "links": {
-      "paper": "https://haekyu.com/assets/21_vis_NeuroCartography.pdf"
+      "demo": "https://poloclub.github.io/neuro-cartography/",
+      "paper": "https://arxiv.org/abs/2108.12931"
     },
     "bibtex": [
       "@article{park2021neurocartography,", 
@@ -53,7 +54,7 @@
       "that represent coherent, human-meaningful concepts. And through usage",
       "scenarios, we describe how our approaches enable interesting and",
       "surprising discoveries, such as concept cascades of related and",
-      "isolated concepts. The N EURO C ARTOGRAPHY visualization runs in modern",
+      "isolated concepts. The NeuroCartography visualization runs in modern",
       "browsers and is open-sourced."
     ]
   },

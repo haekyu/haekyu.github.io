@@ -1,5 +1,12 @@
 [
   {
+    "name": "NeuroCartography: Scalable Automatic Visual Summarization of Concepts in Deep Neural Networks",
+    "contents": [
+      "<u>Haekyu Park</u>, Nilaksh Das, Rahul Duggal, Austin P. Wright, Omar Shaikh, Fred Hohman, Duen Horng Chau",
+      "Oct 2021, IEEE Visualization Conference (VIS)"
+    ]
+  },
+  {
     "name": "SkeletonVis: Interactive Visualization for Understanding Adversarial Attacks on Human Action Recognition Models",
     "contents": [
       "<u>Haekyu Park</u>, Zijie Jay Wang, Nilaksh Das, Anindya S. Paul, Pruthvi Perumalla, Zhiyan Zhou, Duen Horng Chau",

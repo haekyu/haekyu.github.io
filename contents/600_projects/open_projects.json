@@ -1,5 +1,27 @@
 [
   {
+    "name": "NeuroCartography: Scalable Automatic Visual Summarization of Concepts in Deep Neural Networks",
+    "date": "2021",
+    "contents": [
+      "Keywords: Deep Learning Interpretability, Visualization, Human Interpretable Concepts Learned by a Model, Concept Cascade",
+      "Interactive visual system that scalably summarizes and visualizes concepts learned by neural networks.",
+      "It was published at IEEE Visualization Conference (VIS), 2021.",
+      "<u>Haekyu Park</u>, Nilaksh Das, Rahul Duggal, Austin P. Wright, Omar Shaikh, Fred Hohman, Duen Horng Chau",
+      "<a href='https://poloclub.github.io/neuro-cartography/'><i class='fas fa-play'></i>Demo</a>"
+    ]
+  },
+  {
+    "name": "SkeletonVis: Interactive Visualization for Understanding Adversarial Attacks on Human Action Recognition Models",
+    "date": "2021",
+    "contents": [
+      "Keywords: Adversarial Attacks, Human Action Recognition",
+      "Interactive visual system for understanding vulnerability of human action recognition model.",
+      "It was published at AAAI Demo, 2021.",
+      "<u>Haekyu Park</u>, Zijie J. Wang, Nilaksh Das, Anindya S. Paul, Pruthvi Perumalla, Zhiyan Zhou, Duen Horng Chau",
+      "<a href='https://poloclub.github.io/skeleton-vis/'><i class='fas fa-play'></i>Demo</a>"
+    ]
+  },
+  {
     "name": "CNN Explainer: Learning Convolutional Neural Networks with Interactive Visualization",
     "date": "2020",
     "contents": [
