@@ -1,5 +1,46 @@
 [
   {
+    "id": "misvis",
+    "title": "MisVis: Explaining Web Misinformation Connections via Visual Summary",
+    "author": [
+      "<a href='https://ligi214.github.io'>Seongmin Lee</a>",
+      "Sadia Afroz",
+      "<a href='https://haekyu.github.io'><u>Haekyu Park</u></a>",
+      "<a href='https://zijie.wang/'>Zijie J. Wang</a>",
+      "<a href='https://oshaikh.com/'>Omar Shaikh</a>",
+      "Vibhor Sehgal",
+      "Ankit Peshin",
+      "<a href='https://www.cc.gatech.edu/~dchau/'>Duen Horng Chau</a>"
+    ],
+    "venue": "CHI Conference on Human Factors in Computing Systems Extended Abstracts, 2022",
+    "links": {
+      "demo": "https://poloclub.github.io/MisVis/",
+      "paper": "https://ligi214.github.io/assets/publication_pdf/22_chi_misvis_publication.pdf"
+    },
+    "bibtex": [
+      "@article{10.1145/3491101.3519711,",
+        "doi = {10.1145/3491101.3519711},",
+        "author = {Lee, Seongmin AND Afroz, Sadia AND Park, Haekyu AND Wang, Zijie J. AND Shaikh, Omar AND Sehgal, Vibhor AND Peshin, Ankit AND Chau, Duen Horng},",
+        "publisher = {ACM},",
+        "booktitle = {Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems}",
+        "title = {{MisVis}: Explaining Web Misinformation Connections via Visual Summary},",
+        "year = {2022},",
+      "}"
+    ],
+    "detail": [
+      "Identifying and raising awareness about web misinformation is crucial",
+      "as the Internet has become a major source of information for many people.",
+      "We introduce MisVis, a web-based interactive tool that helps users better assess misinformation websites",
+      "and understand their connections with other misinformation sites through visual explanations.",
+      "Different from the existing techniques that primarily only focus on alerting users of misinformation,", 
+      "MisVis provides new ways to visualize how the site is involved in spreading information on the web and social media.",
+      "Through MisVis, we con- tribute novel interactive visual design: Summary View helps users understand a site's overall reliability",
+      "by showing the distributions of its linked websites; Graph View presents users with the connection details of how a site is linked", 
+      "to other misinformation websites. In collaboration with researchers at a large security company, we are working to deploy MisVis", 
+      "as a web browser extension for broader impact."
+    ]
+  },
+  {
     "id": "neurocartography",
     "title": "NeuroCartography: Scalable Automatic Visual Summarization of Concepts in Deep Neural Networks",
     "author": [

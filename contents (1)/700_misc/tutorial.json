@@ -1,9 +1,0 @@
-[
-  {
-    "name": "RAPIDS and Cybersecurity: A Network Use Case",
-    "contents": [
-      "Keywords: RAPIDS, NVIDIA, GPU-acceleration, Graph, Personalized Page Rank",
-      "Presented at <a href='https://github.com/rapidsai/notebooks-contrib/tree/master/conference_notebooks/KDD_2019'>KDD 2019 NVIDIA RAPIDS tutorial</a> with the <a href='https://github.com/rapidsai/notebooks-contrib/tree/master/conference_notebooks/KDD_2019/cyber'> cybersecurity use case notebook</a>"
-    ]
-  }
-]
