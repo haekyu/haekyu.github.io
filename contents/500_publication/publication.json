@@ -1,5 +1,51 @@
 [
   {
+    "id": "detectordetective",
+    "title": "DetectorDetective: Investigating the Effects of Adversarial Examples on Object Detectors",
+    "author": [
+      "Sivapriya Vellaichamy",
+      "Matthew Hull",
+      "<a href='https://zijie.wang/'>Zijie J. Wang</a>",
+      "<a href='http://nilakshdas.com'>Nilaksh Das</a>",
+      "<a href='https://shengyun-peng.github.io'>Sheng-Yun Peng</a>",
+      "<a href='https://haekyu.github.io'><u>Haekyu Park</u></a>",
+      "<a href='https://www.cc.gatech.edu/~dchau/'>Duen Horng Chau</a>"
+    ],
+    "venue": "Conference on Computer Vision and Pattern Recognition (CVPR), Demo, 2022",
+    "links": {
+      "demo": "https://poloclub.github.io/detector-detective"
+    },
+    "bibtex": [
+      "@inproceedings{vellaichamy2022cvpr,",
+        "title={DetectorDetective: Investigating the Effects of Adversarial Examples on Object Detectors}",
+        "author={Vellaichamy, Sivapriya and Hull, Matthew and Wang, Zijie J. and Das, Nilaksh and Peng, Sheng-Yun and Park, Haekyu and Chau, Duen Horng},",
+        "booktitle={CVPR}",
+        "year={2022}",
+      "}"
+    ],
+    "detail": [
+      "With deep learning based systems performing exceedingly well in",
+      "many vision-related tasks, a major concern with their widespread", 
+      "deployment especially in safety-critical appli-cations is their",
+      "susceptibility to adversarial attacks. We propose DetectorDetective,",
+      " an interactive visual tool that aims to help users better understand",
+      "the behaviors of a model as adversarial images journey through an object",
+      "detector. DetectorDetective enables users to easily learn about how",
+      "the three key modules of the Faster R-CNN object detector —",
+      "Feature Pyramidal Network, Region Proposal Network, and Region",
+      "Of Interest Head — respond to a user-selected benign image and its",
+      "adversarial version. Visualizations about the progressive changes",
+      "in the intermediate features among such modules help users gain",
+      "insights into the impact of adversarial attacks, and perform ",
+      "side-by-side comparisons between the benign and adversarial responses.",
+      " Furthermore, DetectorDetective displays saliency maps for the", 
+      "input images to comparatively highlight image regions that contribute",
+      "to attack success. DetectorDetective complements adversarial machine",
+      "learning research on object detection by providing a user-friendly",
+      "interactive tool for inspecting and understanding model responses."
+    ]
+  },
+  {
     "id": "misvis",
     "title": "MisVis: Explaining Web Misinformation Connections via Visual Summary",
     "author": [
@@ -18,7 +64,7 @@
       "paper": "https://ligi214.github.io/assets/publication_pdf/22_chi_misvis_publication.pdf"
     },
     "bibtex": [
-      "@article{10.1145/3491101.3519711,",
+      "@article{lee2022misvis,",
         "doi = {10.1145/3491101.3519711},",
         "author = {Lee, Seongmin AND Afroz, Sadia AND Park, Haekyu AND Wang, Zijie J. AND Shaikh, Omar AND Sehgal, Vibhor AND Peshin, Ankit AND Chau, Duen Horng},",
         "publisher = {ACM},",
