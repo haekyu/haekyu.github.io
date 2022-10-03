@@ -8,7 +8,7 @@ function gen_experience() {
     let title = document.createElement('div')
     title.id = 'experience-title'
     title.className = 'title'
-    title.innerText = 'Research Experience'
+    title.innerText = 'Appointments'
     experience.appendChild(title)
 
     // Generate contents

@@ -89,7 +89,7 @@ function gen_anchor() {
 
 function gen_footer() {
   let footer = document.getElementById('footer')
-  let last_updated = '<div class="footer-comp">Last updated on June 15 2021</div>'
+  let last_updated = '<div class="footer-comp">Last updated on Oct 3 2022</div>'
   let designed_by = '<div class="footer-comp">Designed and created by Haekyu Park</div>'
   footer.innerHTML = last_updated + designed_by
 }

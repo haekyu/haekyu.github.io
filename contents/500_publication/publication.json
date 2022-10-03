@@ -1,5 +1,93 @@
 [
   {
+    "id": "neuromapper",
+    "title": "NeuroMapper: In-browser Visualizer for Neural Network Training",
+    "author": [
+      "Zhiyan Zhou",
+      "<a href='https://www.kevinyli.com/'>Kevin Li</a>",
+      "<a href='https://haekyu.github.io'><u>Haekyu Park</u></a>",
+      "Megan Dass",
+      "<a href='https://www.austinpwright.com/'>Austin P. Wright</a>",
+      "<a href='http://nilakshdas.com'>Nilaksh Das</a>",
+      "<a href='https://www.cc.gatech.edu/~dchau/'>Duen Horng Chau</a>"
+    ],
+    "venue": "IEEE Visualization Conference (VIS), 2022",
+    "links": {
+      "paper": "",
+      "demo": "https://poloclub.github.io/NeuroMapper/"
+    },
+    "bibtex": [
+      "@article{zhou2022neuromapper,",
+      "title = {NeuroMapper: In-browser Visualizer for Neural Network Training},",
+        "author = {Zhou, Zhiyan AND Li, Kevin AND Park, Haekyu AND Dass, Megan AND Wright, Austin AND Das, Nilaksh AND Chau, Duen Horng},",
+        "booktitle={IEEE Visualization Conference, (VIS)",
+        "year = {2022},",
+      "}"
+    ],
+    "detail": [
+      "We present our ongoing work NeuroMapper, an in-browser visualization",
+      "tool that helps machine learning (ML) developers interpret the evolution", 
+      "of a model during training, providing a new way to monitor the training", 
+      "process and visually discover reasons for suboptimal training. While", 
+      "most existing deep neural networks (DNNs) interpretation tools are", 
+      "designed for already-trained model, NeuroMapper scalably visualizes", 
+      "the evolution of the embeddings of a model’s blocks across training", 
+      "epochs, enabling real-time visualization of 40,000 embedded points.", 
+      "To promote the embedding visualizations’ spatial coherence across epochs,",
+      "NeuroMapper adapts AlignedUMAP, a recent nonlinear dimensionality", 
+      "reduction technique to align the embeddings. With NeuroMapper, users", 
+      "can explore the training dynamics of a Resnet-50 model, and adjust the", 
+      "embedding visualizations’ parameters in real time. NeuroMapper is", 
+      "open-sourced at https://github.com/poloclub/NeuroMapper and runs in", 
+      "all modern web browsers. A demo of the tool in action is available at:",
+      "https://poloclub.github.io/NeuroMapper/."
+    ]
+  },
+  {
+    "id": "misvis_vis",
+    "title": "Explaining Website Reliability by Visualizing Hyperlink Connectivity",
+    "author": [
+      "<a href='https://ligi214.github.io'>Seongmin Lee</a>",
+      "Sadia Afroz",
+      "<a href='https://haekyu.github.io'><u>Haekyu Park</u></a>",
+      "<a href='https://zijie.wang/'>Zijie J. Wang</a>",
+      "<a href='https://oshaikh.com/'>Omar Shaikh</a>",
+      "Vibhor Sehgal",
+      "Ankit Peshin",
+      "<a href='https://www.cc.gatech.edu/~dchau/'>Duen Horng Chau</a>"
+    ],
+    "venue": "IEEE Visualization Conference (VIS), 2022",
+    "links": {
+      "paper": ""
+    },
+    "bibtex": [
+      "@article{lee2022explaining,",
+      "title = {Explaining Website Reliability by Visualizing Hyperlink Connectivity},",
+        "author = {Lee, Seongmin AND Afroz, Sadia AND Park, Haekyu AND Wang, Zijie J. AND Shaikh, Omar AND Sehgal, Vibhor AND Peshin, Ankit AND Chau, Duen Horng},",
+        "booktitle={IEEE Visualization Conference, (VIS)",
+        "year = {2022},",
+      "}"
+    ],
+    "detail": [
+      "MISVIS helps users assess a website’s reliability and understand",
+      "how the site may be involved in spreading false information by", 
+      "visualizing its hyperlink connectivity. When a user visits a website,",
+      "MISVIS is displayed interstitially over the website, blurring its", 
+      "contents and blocking user interactions. The MISVIS user interface", 
+      "consists of (A) a Header message about the reliability of the website", 
+      "being visited by the user, (B) brief Explanation about how to interpret",
+      "the MISVIS visualization, and (C) the Main Window that visualizes the", 
+      "connectivity of the visited website in two coordinated views: Graph View", 
+      "and Summary View. (1) The View shows how the website connects to other", 
+      "websites via hyperlinks. Dots are websites, and edges are hyperlinks;", 
+      "the site being visited is shown in the middle. MISVIS visualizes the",
+      "information flow among sites through animation. (2) The Summary View",
+      "shows the site’s overall reliability by summarizing the reliability of",
+      "its connected sites. In both views, controversial sites are shown in",
+      "orange, verified in purple, and unlabeled in gray."
+    ]
+  },
+  {
     "id": "detectordetective",
     "title": "DetectorDetective: Investigating the Effects of Adversarial Examples on Object Detectors",
     "author": [
@@ -46,7 +134,7 @@
     ]
   },
   {
-    "id": "misvis",
+    "id": "misvis_chi",
     "title": "MisVis: Explaining Web Misinformation Connections via Visual Summary",
     "author": [
       "<a href='https://ligi214.github.io'>Seongmin Lee</a>",
