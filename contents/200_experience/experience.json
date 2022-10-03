@@ -1,12 +1,12 @@
 [
   {
     "name": "Machine Learning Engineering Intern",
-    "date": "Jun 2022 - Aug 2022",
+    "date": "May 2022 - Aug 2022",
     "contents": [
       "Stripe, Seattle, WA",
       "Mentor: Revanth Rameshkumar",
       "Designed and developed a deep neural network model for identifying fraud transactions, resulting in x8 faster training and (expected) $4-5M/year increase in the volume of detected fraud transactions for customers compared to the previous model."
-    ]
+    ],
   },
   {
     "name": "Research Intern",
