@@ -304,7 +304,7 @@
     "venue": "<a href='https://aaai.org/Conferences/AAAI-21/'>AAAI</a>, Demo, Virtual, 2021.",
     "links": {
       "demo": "https://poloclub.github.io/skeleton-vis/",
-      "paper": "https://arxiv.org/abs/2102.04427"
+      "paper": "https://arxiv.org/abs/2101.10586"
     },
     "bibtex": [
       "@article{park2021skeletonvis,",
