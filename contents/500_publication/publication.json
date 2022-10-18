@@ -192,11 +192,15 @@
       "paper": "https://arxiv.org/abs/2108.12931"
     },
     "bibtex": [
-      "@article{park2021neurocartography,", 
-      "title={{NeuroCartography: Scalable Automatic Visual Summarization of Concepts in Deep Neural Networks}},",
-      "author={Park, Haekyu and Das, Nilaksh and Duggal, Rahul and Wright, Austin P. and Shaikh, Omar and Hohman, Fred and Chau, Duen Horng},",
-      "booktitle={IEEE Visualization Conference, (VIS),",
-      "year={2021}",
+      "@article{park2021neurocartography,",
+      "title={Neurocartography: Scalable automatic visual summarization of concepts in deep neural networks},",
+      "author={Park, Haekyu and Das, Nilaksh and Duggal, Rahul and Wright, Austin P and Shaikh, Omar and Hohman, Fred and Chau, Duen Horng Polo},",
+      "journal={IEEE Transactions on Visualization and Computer Graphics},",
+      "volume={28},",
+      "number={1},",
+      "pages={813--823},",
+      "year={2021},",
+      "publisher={IEEE}",
       "}"
     ],
     "detail": [
