@@ -2,13 +2,13 @@ gen_experience()
 
 function gen_experience() {
   $.getJSON('./contents/200_experience/experience.json', function(data) {
-
+    console.log("?????!!!!...")
     // Generate title
     let experience = document.getElementById('experience')
     let title = document.createElement('div')
     title.id = 'experience-title'
     title.className = 'title'
-    title.innerText = 'Appointments'
+    title.innerText = 'Work Experience'
     experience.appendChild(title)
 
     // Generate contents
