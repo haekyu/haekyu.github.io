@@ -31,6 +31,16 @@
           $(this).load(file)
         })
       })
+
+      function toggle_block(id) {
+        var block = document.getElementById(id)
+        var block_display = block.style.display
+        if (block_display == 'none') {
+          block.style.display = 'block'
+        } else {
+          block.style.display = 'none'
+        }
+      }
     </script>
 
     <script type="module" src="./contents/600_publication.js"></script>
@@ -97,20 +107,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
     <script src="assets/js/main.js"></script>
-    <script>
-      function toggle_block(id) {
-        var block = document.getElementById(id)
-        var block_display = block.style.display
-        if (block_display == 'none') {
-          block.style.display = 'block'
-        } else {
-          block.style.display = 'none'
-        }
-      }
-      var old_news = document.getElementById('old-news-title')
-      old_news.onclick = function() {toggle_block('old-news')}
-      
-      
-    </script>
+
   </body>
 </html>
