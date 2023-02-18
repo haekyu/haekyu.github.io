@@ -1,69 +1,116 @@
+<!doctype html>
 <html lang="en">
-
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Haekyu Park - CS PhD Student at Georgia Tech</title>
-    <link rel="icon" type="image/png" href="./img/logo.svg">
 
-    <!-- Import -->
-    <link href="./style.css" rel="stylesheet">
-    <link href="./style_mobile.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <script type="module" src="./contents/contents.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
-    <!-- Sidebar -->
-    <script type="module" src="./sidebar/sidebar.js"></script>
-    <link href="./sidebar/sidebar.css" rel="stylesheet"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Contents -->
-    <link href="./contents/000_about/about.css" rel="stylesheet"></script>
-    <link href="./contents/100_education/education.css" rel="stylesheet"></script>
-    <script type="module" src="./contents/200_experience/experience.js"></script>
-    <script type="module" src="./contents/300_honors/honors.js"></script>
-    <script type="module" src="./contents/400_grants/grants.js"></script>
-    <script type="module" src="./contents/500_publication/publication.js"></script>
-    <link href="./contents/500_publication/publication.css" rel="stylesheet"></script>
-    <script type="module" src="./contents/600_projects/projects.js"></script>
-    <link href="./contents/600_projects/projets.css" rel="stylesheet"></script>
-    <script type="module" src="./contents/700_misc/misc.js"></script>
-    <link href="./contents/700_misc/misc.css" rel="stylesheet"></script>
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
 
+    <title>Haekyu Park - CS PhD Student at Georgia Tech</title>
+    <script>
+      $(function () {
+        var includes = $('[data-include]')
+        $.each(includes, function () {
+          var file = 'contents/' + $(this).data('include') + '.html'
+          $(this).load(file)
+        })
+      })
+    </script>
+
+    <script type="module" src="./contents/600_publication.js"></script>
   </head>
-
   <body>
-
-    <div id="sidebar">
-      <div id="intro"></div>
-      <div id="anchor"></div>
-      <div id="footer"></div>
-    </div>
-
-    <div id="contents">
-      <div id="about" class="contents-block"></div>
-      <div id="education" class="contents-block"></div>
-      <div id="experience" class="contents-block"></div>
-      <div id="honors" class="contents-block"></div>
-      <div id="grants" class="contents-block"></div>
-      <div id="publications" class="contents-block"></div>
-      <div id="projects" class="contents-block">
-        <div id="open-projects"></div>
-        <div id="other-projects"></div>
+   
+    <!-- header -->
+    <header class="ds-header" id="site-header">
+      <div class="container">
+        <div class="ds-header-inner">
+          <!-- logo -->
+          <a href="index.html" class="ds-logo">
+            <span>H</span>Haekyu Park
+          </a>
+          
+          <!-- social -->
+          <ul class="ds-social">
+            <li><a href="https://haekyu.com/assets/haekyu_cv.pdf" target="_blank"><i class="ri-file-line"></i></i></a></li>
+            <li><a href="https://scholar.google.com/citations?user=Nsmmp-cAAAAJ" target="_blank"><i class="fa-solid fa-graduation-cap"  style="font-size: 12px;"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/haekyu-park-010101/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+          </ul>
+        </div>
       </div>
-      <div id="misc" class="contents-block">
-        <div id="misc-talks"></div>
-        <div id="misc-tutorial"></div>
-        <div id="misc-teaching"></div>
-        <div id="misc-mentoring"></div>
-        <div id="misc-certification"></div>
-        <div id="misc-service"></div>
-        <div id="misc-skills"></div>
-      </div>
-    </div>
+    </header>
 
+    <!-- banner -->
+    <div id="banner" class="ds-banner" data-include="000_banner"></div>
+
+    <!-- news -->
+    <div id="news" class="ds-section" data-include="100_news"></div>
+
+    <!-- Education -->
+    <div id="education" class="ds-section" data-include="200_education"></div>
+
+    <!-- Honors and Awards -->
+    <div id="honor" class="ds-section" data-include="300_honor"></div>
+
+    <!-- Experience -->
+    <div id="experience" class="ds-section" data-include="400_experience"></div>
+   
+    <!-- Grants and Funding -->
+    <div id="grants" class="ds-section" data-include="500_grants"></div>
+
+    <!-- Publication -->
+    <div id="publication" class="ds-section"></div>
+
+    <!-- Open-Source Project -->
+    <div id="open-project" class="ds-section" data-include="700_open_project"></div>
+
+    <!-- Other Project -->
+    <div id="other-project" class="ds-section" data-include="800_other_project"></div>
+
+    <!-- Talks -->
+    <div id="talk" class="ds-section" data-include="900_talk"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      function toggle_block(id) {
+        var block = document.getElementById(id)
+        var block_display = block.style.display
+        if (block_display == 'none') {
+          block.style.display = 'block'
+        } else {
+          block.style.display = 'none'
+        }
+      }
+      var old_news = document.getElementById('old-news-title')
+      old_news.onclick = function() {toggle_block('old-news')}
+      
+      
+    </script>
   </body>
-
-  
-
 </html>

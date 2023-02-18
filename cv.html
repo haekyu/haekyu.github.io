@@ -1,56 +1,104 @@
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <meta charset="utf-8">
-  <title>CV - Haekyu Park</title>
-  <link rel="icon" type="image/png" href="./img/logo.svg">
+    <!-- Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
-  <!-- Import -->
-  <link href="style_cv.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-  <script type="module" src="./contents/contents.js"></script>
-  <script type="module" src="./sidebar/sidebar.js"></script>
-  <script type="module" src="./contents/200_experience/experience.js"></script>
-  <script type="module" src="./contents/300_honors/honors.js"></script>
-  <script type="module" src="./contents/400_grants/grants.js"></script>
-  <script type="module" src="./contents/500_publication/publication.js"></script>
-  <script type="module" src="./contents/600_projects/projects.js"></script>
-  <script type="module" src="./contents/700_misc/misc.js"></script>
-  
-</head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<body>
-  
-  <div id="sidebar">
-    <div id="intro"></div>
-    <div id="anchor"></div>
-    <div id="footer"></div>
-  </div>
+    <!-- Main CSS -->
+    <link href="./assets/css/main.css" rel="stylesheet">
 
-  <div id="contents">
-    <div id="about" class="contents-block"></div>
-    <div id="education" class="contents-block"></div>
-    <div id="experience" class="contents-block"></div>
-    <div id="honors" class="contents-block"></div>
-    <div id="grants" class="contents-block"></div>
-    <div id="publications" class="contents-block"></div>
-    <div id="projects" class="contents-block">
-      <div id="open-projects"></div>
-      <div id="other-projects"></div>
+    <title>Haekyu Park - CS PhD Student at Georgia Tech</title>
+    <script>
+      $(function () {
+        var includes = $('[data-include]')
+        $.each(includes, function () {
+          var file = 'contents/' + $(this).data('include') + '.html'
+          $(this).load(file)
+        })
+      })
+    </script>
+
+    <script type="module" src="./contents/600_publication.js"></script>
+  </head>
+  <body>
+
+    <!-- banner -->
+    <div class="container">
+      <div class="cv-container">
+        <section>
+          <div class="cv-name">Haekyu Park</div>
+          <div class="cv-intro">
+            <div class="cv-paragraph">
+              I'm a Ph.D. student in Computer Science at Georgia Tech, working with Dr. Polo Chau.
+              My research goal is to address fundamental challenges in understanding <b>how machine learning models works</b> and <b>what they have learned</b>: 
+              <ul>
+                <li> How to scalably discover and summarize concepts that a model has learned? </li>
+                <li> How to identify and explain vulnerabilities that the model is susceptible to? </li>
+                <li> How do such concepts evolve as the model is trained? </li>
+              </ul>
+            </div>
+            <div class="cv-paragraph">
+              Specifically, I create novel tools that enable interactive scalable discovery of concepts, evolutions, and vulnerabilities in deep learning. 
+              My research is supported by <a href="https://www.jpmorgan.com/technology/artificial-intelligence/research-awards/phd-fellowship-2021">JPMorgan AI PhD Fellowship</a>. I have been fortunate to work with amazing researchers, engineers, and scientists at Stripe, Microsoft, NVIDIA, and Intel.
+            </div>
+          </div>
+          <div class="cv-profile-contact">
+            <div class="cv-profile-contact-item">
+              <a href="mailto:haekyu@gatech.edu"><i class="fa-solid fa-envelope"></i>haekyu@gatech.edu</a>
+            </div>
+            <div class="cv-profile-contact-item">
+              <a href="https://haekyu.com/assets/haekyu_cv.pdf"><i class="fa-solid fa-file"></i>CV</a>
+            </div>
+            <div class="cv-profile-contact-item">
+              <a href="https://scholar.google.com/citations?user=Nsmmp-cAAAAJ"><i class="fa-solid fa-graduation-cap"></i>Google Scholar</a>
+            </div>
+          </div>
+        </div>
+        </section>
     </div>
-    <div id="misc" class="contents-block">
-      <div id="misc-talks"></div>
-      <div id="misc-tutorial"></div>
-      <div id="misc-teaching"></div>
-      <div id="misc-mentoring"></div>
-      <div id="misc-certification"></div>
-      <div id="misc-service"></div>
-      <div id="misc-skills"></div>
+
+    <div class="cv-container">
+      <!-- Education -->
+      <div id="cv-education" class="ds-section" data-include="200_education"></div>
+
+      <!-- Honors and Awards -->
+      <div id="honor" class="ds-section" data-include="300_honor"></div>
+
+      <!-- Experience -->
+      <div id="experience" class="ds-section" data-include="400_experience"></div>
+    
+      <!-- Grants and Funding -->
+      <div id="grants" class="ds-section" data-include="500_grants"></div>
+
+      <!-- Publication -->
+      <div id="publication" class="ds-section"></div>
+
+      <!-- Open-Source Project -->
+      <div id="open-project" class="ds-section" data-include="700_open_project"></div>
+
+      <!-- Other Project -->
+      <div id="other-project" class="ds-section" data-include="800_other_project"></div>
+
+      <!-- Talks -->
+      <div id="talk" class="ds-section" data-include="900_talk"></div>
+
     </div>
-  </div>
 
-</body>
-
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
