@@ -64,10 +64,12 @@ function gen_publication() {
       for (let key in item['links']) {
         let link = document.createElement('a')
         let name = mk_fst_letter_capital(key)
-        link.className = 'publication-href'
-        link.href = item['links'][key]
-        link.innerHTML = `<i class='${icon_class[key]}'></i>${name}`
-        links.appendChild(link)
+        if (item['links'][key].length > 0) {
+          link.className = 'publication-href'
+          link.href = item['links'][key]
+          link.innerHTML = `<i class='${icon_class[key]}'></i>${name}`
+          links.appendChild(link)  
+        }
       }
       item_div.appendChild(links)
 
