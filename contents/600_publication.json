@@ -1,5 +1,37 @@
 [
   {
+    "id": "diffusionexplainer",
+    "title": "Diffusion Explainer: Visual Explanation for Text-to-image Stable Diffusion",
+    "author": [
+      "<a href='https://www.seongmin.xyz/'>Seongmin Lee</a>",
+      "<a href='https://bhoov.com/'>Benjamin Hoover</a>",
+      "Hendrik Strobelt",
+      "<a href='https://zijie.wang/'>Zijie J. Wang</a>",
+      "<a href='https://shengyun-peng.github.io/'>ShengYun Peng</a>",
+      "<a href='https://www.austinpwright.com/'>Austin P. Wright</a>",
+      "<a href='https://www.kevinyli.com/'>Kevin Li</a>",
+      "<a href='https://haekyu.github.io'><u>Haekyu Park</u></a>",
+      "Haoyang Yang",
+      "<a href='https://www.cc.gatech.edu/~dchau/'>Duen Horng Chau</a>"
+    ],
+    "venue": "IEEE Visualization Conference (VIS), 2024",
+    "links": {
+      "paper": "https://arxiv.org/abs/2305.03509",
+      "demo": "https://poloclub.github.io/diffusion-explainer/"
+    },
+    "bibtex": [
+      "@article{lee2023diffusionexplainer,",
+      "title={{D}iffusion {E}xplainer: {Visual Explanation for Text-to-image {S}table {D}iffusion}},",
+        "author={Lee, Seongmin and Hoover, Benjamin and Strobelt, Hendrik and Wang, Zijie J and Peng, ShengYun and Wright, Austin and Li, Kevin and Park, Haekyu and Yang, Haoyang and Chau, Duen Horng},",
+        "booktitle = {IEEE Visualization Conference, (VIS)},",
+        "year = {2024},",
+      "}"
+    ],
+    "detail": [
+      "Diffusion-based generative models' impressive ability to create convincing images has captured global attention. However, their complex internal structures and operations often make them difficult for non-experts to understand. We present Diffusion Explainer, the first interactive visualization tool that explains how Stable Diffusion transforms text prompts into images. Diffusion Explainer tightly integrates a visual overview of Stable Diffusion's complex components with detailed explanations of their underlying operations, enabling users to fluidly transition between multiple levels of abstraction through animations and interactive elements. By comparing the evolutions of image representations guided by two related text prompts over refinement timesteps, users can discover the impact of prompts on image generation. Diffusion Explainer runs locally in users' web browsers without the need for installation or specialized hardware, broadening the public's education access to modern AI techniques."
+    ]
+  },
+  {
     "id": "conceptevo",
     "title": "Concept Evolution in Deep Learning Training: A Unified Interpretation Framework and Discoveries",
     "author": [
@@ -24,38 +56,6 @@
         "author={Park, Haekyu and Lee, Seongmin and Hoover, Benjamin and Wright, Austin P and Shaikh, Omar and Duggal, Rahul and Das, Nilaksh and Li, Kevin and Hoffman, Judy and Chau, Duen Horng},",
         "booktitle = {International Conference on Information and Knowledge Management (CIKM)},",
         "year = {2023}",
-      "}"
-    ],
-    "detail": [
-      "Diffusion-based generative models' impressive ability to create convincing images has captured global attention. However, their complex internal structures and operations often make them difficult for non-experts to understand. We present Diffusion Explainer, the first interactive visualization tool that explains how Stable Diffusion transforms text prompts into images. Diffusion Explainer tightly integrates a visual overview of Stable Diffusion's complex components with detailed explanations of their underlying operations, enabling users to fluidly transition between multiple levels of abstraction through animations and interactive elements. By comparing the evolutions of image representations guided by two related text prompts over refinement timesteps, users can discover the impact of prompts on image generation. Diffusion Explainer runs locally in users' web browsers without the need for installation or specialized hardware, broadening the public's education access to modern AI techniques."
-    ]
-  },
-  {
-    "id": "diffusionexplainer",
-    "title": "Diffusion Explainer: Visual Explanation for Text-to-image Stable Diffusion",
-    "author": [
-      "<a href='https://www.seongmin.xyz/'>Seongmin Lee</a>",
-      "<a href='https://bhoov.com/'>Benjamin Hoover</a>",
-      "Hendrik Strobelt",
-      "<a href='https://zijie.wang/'>Zijie J. Wang</a>",
-      "<a href='https://shengyun-peng.github.io/'>ShengYun Peng</a>",
-      "<a href='https://www.austinpwright.com/'>Austin P. Wright</a>",
-      "<a href='https://www.kevinyli.com/'>Kevin Li</a>",
-      "<a href='https://haekyu.github.io'><u>Haekyu Park</u></a>",
-      "Haoyang Yang",
-      "<a href='https://www.cc.gatech.edu/~dchau/'>Duen Horng Chau</a>"
-    ],
-    "venue": "IEEE Visualization Conference (VIS), 2023",
-    "links": {
-      "paper": "https://arxiv.org/abs/2305.03509",
-      "demo": "https://poloclub.github.io/diffusion-explainer/"
-    },
-    "bibtex": [
-      "@article{lee2023diffusionexplainer,",
-      "title={{D}iffusion {E}xplainer: {Visual Explanation for Text-to-image {S}table {D}iffusion}},",
-        "author={Lee, Seongmin and Hoover, Benjamin and Strobelt, Hendrik and Wang, Zijie J and Peng, ShengYun and Wright, Austin and Li, Kevin and Park, Haekyu and Yang, Haoyang and Chau, Duen Horng},",
-        "booktitle = {IEEE Visualization Conference, (VIS)},",
-        "year = {2023},",
       "}"
     ],
     "detail": [
